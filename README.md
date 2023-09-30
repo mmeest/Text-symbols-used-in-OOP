@@ -331,7 +331,7 @@ person.name = "David";  // Adding the "name" property using the dot operator
 person.age = 28;        // Adding the "age" property using the dot operator
 ```
 
-## Math Operators
+## Arithmetic Operators
 
 <h1><p align="center";>+ and ++ - plus and double plus</p></h1>    
 
