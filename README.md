@@ -14,7 +14,7 @@ Different text symbols used in object oriented programming.
     [ and ]: Square brackets are often used for defining arrays and accessing elements in them.
     ,: Comma is used to separate items in a list or function arguments.
 
-<h1><div align="center";>; - Semicolon</div></h1>
+<h1><p align="center";>; - Semicolon</p></h1>
 Semicolon is often used as a statement terminator in many programming languages.
 
 ## Operators
