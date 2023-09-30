@@ -7,6 +7,7 @@ Different text symbols used in object oriented programming.
 - [Arithmetic Operators](#arithmetic-operators)
 - [Comparsion Operators](#comparsion-operators)
 - [Logical Operators](#logical-operators)
+- [Bitwise Operators](#bitwise-operators)
 - [String Literals](#string-literals)
 - [Template Literals](#template-literals)
 - [Separator](#separator)
@@ -943,6 +944,7 @@ The caret symbol (^) is used in programming languages for various purposes, incl
     Bitwise XOR Operator (^):
         In many programming languages, the caret (^) is used as a bitwise XOR operator. It performs a bitwise XOR operation between two binary numbers, where each bit in the result is set to 1 if the corresponding bits in the operands are different.
         Example in Python:
+        
 ```
 a = 5     # Binary: 0101
 b = 3     # Binary: 0011
