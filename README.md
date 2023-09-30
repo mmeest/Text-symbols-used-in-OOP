@@ -477,7 +477,7 @@ Preprocessor Directives (C/C++): In C and C++ programming, the double forward sl
 #define MAX_VALUE 100 // This is a comment
 ```
 
-<h1><p align="center";>% - percend or modulo</p></h1>
+<h1><p align="center";>% - percent or modulo</p></h1>
 In programming, the percent symbol (%) is primarily used as the modulo operator, which calculates the remainder of a division operation between two numeric values. 
 Modulo Operator (%):
     Modulo Operation: The percent symbol (%) is used to perform a modulo operation, which calculates the remainder when one number is divided by another. It returns the remainder as the result. For example:
@@ -583,170 +583,171 @@ if (x < y) {
 }
 ```
 
+<h1><p align="center";>; - semicolon</p></h1>
+
 The semicolon (;) is a punctuation symbol commonly used in many programming languages. Its primary purpose is to terminate statements or separate multiple statements on a single line. Here's a breakdown of its usage in programming:
 
-    Statement Terminator: In several programming languages, a semicolon is used to mark the end of a statement. This is especially common in languages like C, C++, Java, and C#, among others. For example:
+Statement Terminator: In several programming languages, a semicolon is used to mark the end of a statement. This is especially common in languages like C, C++, Java, and C#, among others. For example:
 
-    c
-
+```
 int x = 5; // Semicolon terminates the variable assignment statement
 printf("Hello, world!"); // Semicolon terminates the print statement
+```
 
 Multiple Statements on One Line: You can use semicolons to write multiple statements on a single line. This can help in writing more compact code, but it should be used judiciously for the sake of readability. For example:
 
 java
-
+```
 int a = 10; int b = 20; int sum = a + b; // Multiple statements on one line
+```
 
 While this is syntactically valid, it's often better to place each statement on a separate line for clarity.
 
 In JavaScript: JavaScript uses semicolons to terminate statements as well. However, JavaScript also has automatic semicolon insertion (ASI) rules, which means that in some cases, you can omit semicolons, and the JavaScript engine will insert them automatically. Despite this, it's considered a good practice to include semicolons explicitly to avoid potential issues with ASI. For example:
 
 javascript
-
+```
 let x = 5; // Semicolon can be included (recommended)
 let y = 10  // Semicolon omitted (but automatically inserted by ASI)
+```
 
 In Python: Python does not use semicolons to terminate statements. Instead, Python relies on indentation to determine the structure of the code. Statements are separated by newlines and the level of indentation. For example:
 
 python
-
+```
     x = 5  # No semicolon needed; indentation determines the statement block
     print("Hello, world!")
+```
 
 In summary, the semicolon is a versatile symbol in programming languages, primarily used to terminate statements or separate multiple statements on a single line. Its specific usage may vary from language to language, so it's essential to be familiar with the conventions of the language you are working with.
-User
-Tell me about single quote in programming langages
-ChatGPT
+
+<h1><p align="center";>' - single quote</p></h1>
 
 Single quotes (') are used in programming languages primarily for two purposes:
 
-    Character Literals: In many programming languages, single quotes are used to define character literals. A character literal represents a single character and is enclosed within single quotes. For example:
+Character Literals: In many programming languages, single quotes are used to define character literals. A character literal represents a single character and is enclosed within single quotes. For example:
 
-        In C and C++:
-
-        c
-
+In C and C++:
+```
 char myChar = 'A';
+```
 
 In Python:
-
-python
-
+```
 my_char = 'B'
+```
 
 In Java:
-
-java
-
+```
     char myChar = 'X';
+```
 
 Character literals are often used when working with individual characters or when specifying characters within strings.
 
 String Literals (in Some Languages): Some programming languages use single quotes to define string literals, although it's less common than using double quotes ("). For example, in SQL (Structured Query Language), single quotes are used to denote string literals:
 
 sql
-
+```
     SELECT * FROM employees WHERE last_name = 'Smith';
+```
 
-    In SQL, single quotes are used to enclose text values, making it clear that the content is a string.
+In SQL, single quotes are used to enclose text values, making it clear that the content is a string.
 
 It's important to note that the specific usage of single quotes can vary from one programming language to another. In most programming languages, double quotes are the more common choice for defining string literals, while single quotes are primarily reserved for character literals or used in other specific contexts. Always refer to the documentation and conventions of the programming language you are working with to ensure proper usage of single quotes.
-User
-Are some cases in programming semicolon used as seperator in collection
-ChatGPT
 
-In some programming languages, semicolons can be used as separators in certain collection or data structure literals, primarily for initializing arrays, sets, or dictionaries. Here are a few examples:
+In some programming languages, semicolons can be used as separators in certain collection or data structure literals, primarily for initializing arrays, sets, or dictionaries. 
 
-    Arrays (JavaScript and ASI Languages): In JavaScript, you can use semicolons as separators when initializing an array. While you typically use commas to separate array elements, JavaScript's Automatic Semicolon Insertion (ASI) allows semicolons to be used as separators as well. For example:
+ Arrays (JavaScript and ASI Languages): In JavaScript, you can use semicolons as separators when initializing an array. While you typically use commas to separate array elements, JavaScript's Automatic Semicolon Insertion (ASI) allows semicolons to be used as separators as well. For example:
 
-    javascript
-
+ javascript
+```
 const myArray = [1; 2; 3]; // Semicolons used as separators (ASIs insert commas)
+```
 
 However, using semicolons in this way is not common practice, and commas are preferred for separating array elements.
 
 Tuples (Python): In Python, semicolons can be used to separate elements in a tuple, although this usage is not very common:
 
-python
-
+```
 my_tuple = (1; 2; 3)
+```
 
 In practice, Python developers usually use commas to define tuples:
 
-python
-
+```
     my_tuple = (1, 2, 3)
+```
 
-    Other Data Structures: Depending on the programming language and context, semicolons may also be used as separators in other data structures like sets, dictionaries, or record literals. However, the specific use of semicolons in such cases varies from language to language and is less common than other separator symbols like commas or colons.
+Other Data Structures: Depending on the programming language and context, semicolons may also be used as separators in other data structures like sets, dictionaries, or record literals. However, the specific use of semicolons in such cases varies from language to language and is less common than other separator symbols like commas or colons.
 
 It's important to note that the use of semicolons as separators in collections is not a standard practice in most programming languages. Developers typically use language-specific conventions for defining and initializing collections, and these conventions are documented in the language's official documentation. Commas are much more common and widely accepted as separators in collection literals across various programming languages.
-User
-Tell me about double quote " in programming 
-ChatGPT
+
+<h1><p align="center";>" - double quote</p></h1>
 
 Double quotes (") are widely used in programming languages for a variety of purposes, primarily related to representing strings and text. Here are some common uses of double quotes in programming:
 
-    String Literals: Double quotes are used to define string literals in most programming languages. A string literal is a sequence of characters enclosed within double quotes. For example:
+String Literals: Double quotes are used to define string literals in most programming languages. A string literal is a sequence of characters enclosed within double quotes. For example:
 
-        In Python:
+In Python:
 
-        python
-
+```
 my_string = "Hello, World!"
+```
 
 In JavaScript:
 
-javascript
-
+```
 let greeting = "Welcome to the website!";
+```
 
 In C++:
 
-cpp
-
+```
     std::string message = "This is a C++ string.";
+```
 
 Strings are fundamental data types in programming, and they are used to represent text and characters.
 
 String Interpolation: In some programming languages, double quotes are used to interpolate variables or expressions within a string. This allows you to embed values directly into a string without explicitly concatenating them. For example, in Python:
 
 python
-
+```
 name = "Alice"
 greeting = f"Hello, {name}!"  # Using an f-string for interpolation
+```
 
 In the above example, the value of the name variable is inserted into the string using curly braces within the double-quoted string.
 
 Escape Sequences: Double quotes can be escaped within a string using escape sequences, such as \", to include a literal double quote character in the string. For example:
 
 java
-
+```
 String sentence = "She said, \"Hello!\"";
+```
 
 This is necessary when you want to include double quotes within a string without terminating it prematurely.
 
 Regular Expressions: In languages that support regular expressions, double quotes are used to enclose regular expression patterns. For instance, in Python:
 
 python
-
+```
 import re
 pattern = r"^\d{3}-\d{2}-\d{4}$"  # Regular expression pattern for a Social Security Number
+```
 
 Double quotes are used to specify the regular expression pattern as a string.
 
 Error Messages and Debugging: Double quotes are often used in error messages, debugging output, and logging to display text messages or explanations to the developer. For example:
 
 java
-
+```
     System.err.println("An error occurred: File not found.");
-
-    In this case, double quotes are used to delimit the error message.
+```
+ In this case, double quotes are used to delimit the error message.
 
 In summary, double quotes in programming are primarily used for defining string literals, string interpolation, escaping, regular expressions, and displaying text in various contexts, including error messages and debugging output. The specific usage may vary slightly from one programming language to another, but the fundamental purpose remains consistent across languages.
-User
-tell me about using single and double quotes with strings 
-ChatGPT
+
+<h1><p align="center";>' and " - single and double quotes</p></h1>
 
 In programming, both single quotes (') and double quotes (") can be used to define string literals, but their usage may vary depending on the programming language and context. Here's a comparison of using single and double quotes with strings:
 
@@ -756,65 +757,60 @@ In programming, both single quotes (') and double quotes (") can be used to defi
 
     Escaping: Single quotes are often used when you need to include double quotes within a string without terminating the string prematurely. For example:
 
-        In Python:
+   In Python:
 
-        python
-
+```
 my_string = 'He said, "Hello!"'
+```
 
 In JavaScript:
-
-javascript
-
+```
     let myString = 'She replied, "Hi!"';
+```
 
 String Concatenation: In languages like Python and SQL, single quotes are used for string literals, and you can use them to concatenate strings by enclosing each portion of the string within single quotes. For example:
 
-    In Python:
-
-    python
-
+In Python:
+```
 full_name = 'John' + ' ' + 'Doe'
+```
 
 In SQL:
-
-sql
-
+```
         SELECT 'John' || ' ' || 'Doe' AS full_name
+```
 
 2. Double Quotes (""):
 
     String Literals: Double quotes are the more common choice for defining string literals in many programming languages. A string literal represents a sequence of characters, and it is enclosed within double quotes.
 
-    String Interpolation: In some languages, such as Python with f-strings or JavaScript with template literals, double quotes allow for string interpolation, where variables or expressions can be directly embedded within the string. For example:
+<h1><p align="center";>f-strings</p></h1>
 
-        In Python (f-strings):
+String Interpolation: In some languages, such as Python with f-strings or JavaScript with template literals, double quotes allow for string interpolation, where variables or expressions can be directly embedded within the string. For example:
 
-        python
-
+In Python (f-strings):
+```
 name = "Alice"
 greeting = f"Hello, {name}!"
-
+```
 In JavaScript (template literals):
-
-javascript
-
+```
     const name = "Bob";
     const greeting = `Hi, ${name}!`;
-
+```
 JSON: Double quotes are used for defining strings within JSON (JavaScript Object Notation) data structures. JSON requires double-quoted keys and string values. For example:
 
 json
-
+```
     {
       "name": "Emily",
       "age": 30
     }
+```
 
 In summary, the choice between single quotes and double quotes for defining strings often depends on the programming language and coding conventions. Both can be used effectively, but it's essential to be consistent within your codebase and follow the conventions of the language you are using. Double quotes are more common for string literals, especially when you need string interpolation or when working with JSON, while single quotes are often used for character literals or when escaping double quotes within a string.
-User
-Tell me about parenthesis in programming ()
-ChatGPT
+
+<h1><p align="center";>( and ) - parenthesis</p></h1>
 
 Parentheses (()) in programming are used for a variety of purposes, and their primary role is to control the order of operations, group expressions, and pass arguments to functions. Here are some common uses of parentheses in programming:
 
