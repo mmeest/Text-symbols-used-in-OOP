@@ -140,6 +140,7 @@ my_string = "Hello, World!"
 Escaping: Single quotes are often used when you need to include 
 double quotes within a string without terminating the string prematurely. For example:
     In Python:   
+    
 ```
 my_string = 'He said, "Hello!"'
 ```
