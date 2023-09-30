@@ -582,40 +582,8 @@ if (x < y) {
     // Do something when x is equal to y
 }
 ```
-Default (GPT-3.5)
-User
-Hello
-ChatGPT
 
-Hello! How can I assist you today?
-User
-Does the different text symbols used in programming languages like : ; ' " | + ++ -- == <= >= ! != have some sort of unified name?
-ChatGPT
-
-The different text symbols used in programming languages, such as ;, ', ", |, +, ++, --, ==, <=, >=, !, and !=, do not have a single unified name because they serve various purposes and are part of the syntax and operators of different programming languages. However, we can categorize them into a few general groups:
-
-    Punctuation and Delimiters:
-        ;: Semicolon is often used as a statement terminator in many programming languages.
-        ' and ": Single and double quotation marks are used to denote string literals.
-        ( and ): Parentheses are used for grouping expressions and function call arguments.
-        { and }: Curly braces are used to define blocks of code in languages like C, C++, Java, and JavaScript.
-        [ and ]: Square brackets are often used for defining arrays and accessing elements in them.
-        ,: Comma is used to separate items in a list or function arguments.
-
-    Operators:
-        |: Pipe is used as a bitwise OR or logical OR operator in some languages.
-        +: Plus sign is used for addition.
-        ++ and --: Increment and decrement operators.
-        ==, <=, >=: Comparison operators for equality, less than or equal to, and greater than or equal to, respectively.
-        !: Logical NOT operator.
-        !=: Not equal operator.
-
-These symbols are used differently in various programming languages, and their meanings and syntax can vary. They are essential for expressing the logic and functionality of a program in a concise and standardized way within each programming language.
-User
-Can you tell me about semicolon in programming languages
-ChatGPT
-
-Certainly! The semicolon (;) is a punctuation symbol commonly used in many programming languages. Its primary purpose is to terminate statements or separate multiple statements on a single line. Here's a breakdown of its usage in programming:
+The semicolon (;) is a punctuation symbol commonly used in many programming languages. Its primary purpose is to terminate statements or separate multiple statements on a single line. Here's a breakdown of its usage in programming:
 
     Statement Terminator: In several programming languages, a semicolon is used to mark the end of a statement. This is especially common in languages like C, C++, Java, and C#, among others. For example:
 
