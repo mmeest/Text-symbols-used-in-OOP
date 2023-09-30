@@ -13,7 +13,8 @@ depending on the context and the programming language. Here are some of the main
 Variable Declaration and Type Annotation: In statically-typed programming languages, 
 such as Python with type hints, the colon is used to annotate variables with their data types. 
 This helps improve code readability and can provide type checking benefits. For example:
-    In Python (with type hints):
+In Python (with type hints):
+
 ```
 age: int = 25
 name: str = "Alice"
@@ -21,14 +22,16 @@ name: str = "Alice"
 Dictionary (Map) Literal Initialization: In some programming languages like Python and JavaScript, 
 colons are used to define key-value pairs within dictionaries (Python) or objects (JavaScript). 
 This notation is used when creating or initializing data structures. For example:
-    In Python:
+In Python:
+
 ```
 person = {"name": "Alice", "age": 30}
 ```
 Case Labels (Switch Statements): In languages like C, C++, and Python (with libraries like matchlib), 
 the colon is used to separate case labels in a switch statement. Case labels indicate 
 the code block to execute when a particular value matches a given case. For example:
-    In C:
+In C:
+
 ```
 switch (day) {
     case 1:
@@ -237,7 +240,8 @@ with arrays, lists, and similar data structures. Here's how square brackets are 
 Array and List Initialization: Square brackets are used to define and initialize arrays or lists. 
 Arrays are collections of elements, each identified by an index or position. 
 Lists, which are similar, may have additional features such as dynamic sizing. For example:
-    In Python (List):
+In Python (List):
+
 ```
 my_list = [1, 2, 3, 4]
 ```
@@ -296,7 +300,8 @@ depending on the context and programming language. Here are some of the primary 
 Member Access Operator: The dot is frequently used as the member access operator 
 to access members (variables or methods) of objects or structures. 
 It allows you to navigate the hierarchy of properties and methods within an object or data structure. 
-    In Python:
+In Python:
+    
 ```
 person = {"name": "Alice", "age": 30}
 name = person["name"]  # Accessing the "name" property using square brackets
