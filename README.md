@@ -8,7 +8,7 @@ Different text symbols used in object oriented programming.
 - [Comparsion Operators](#comparsion-operators)
 - [Logical Operators](#logical-operators)
 - [String Literals](#string-literals)
-- [Template Literal](#template-literal)
+- [Template Literals](#template-literals)
 - [Separator](#separator)
 - [Escape character](#escape-character)
 - [Ternary Conditional](#ternary-conditional)
