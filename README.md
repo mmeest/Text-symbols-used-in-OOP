@@ -3,10 +3,16 @@ Different text symbols used in object oriented programming.
 
 ## Contents
 - [Punctuation and Delimiters](#punctuation-and-delimiters)
+- [Assignement Operator](#assignement-operator)
 - [Arithmetic Operators](#arithmetic-operators)
 - [Comparsion Operators](#comparsion-operators)
 - [Logical Operators](#logical-operators)
 - [String Literals](#string-literals)
+- [Template Literal](#template-literal)
+- [Separator](#separator)
+- [Escape character](#escape-character)
+- [Ternary Conditional](#ternary-conditional)
+- [Comment](#comment)
 
 ## Punctuation and Delimiters
 
@@ -504,6 +510,138 @@ Calendar Operations: The modulo operator is sometimes used in date and time calc
 day_of_week = (5 + 31) % 7  # day_of_week is 5 (0 is Sunday, 5 is Friday)
 ```
 
+## Assignement operators
+In programming, the single equal sign (=) is used as the assignment operator. Its primary purpose is to assign a value to a variable or a data structure. The assignment operator is fundamental to the process of storing and manipulating data in computer programs. Here's how it works:
+
+Assignment Operator (=):
+    Variable Assignment: The most common use of the = symbol is to assign a value to a variable. When you use =, you're essentially telling the computer to store the value on the right-hand side in the variable on the left-hand side.
+    Example in Python:
+```
+x = 10  # Assigns the value 10 to the variable x
+```
+Example in JavaScript:
+```
+let name = "Alice";  // Assigns the string "Alice" to the variable name
+```
+Reassignment: You can also use = to reassign a new value to an existing variable, which overwrites the previous value.
+Example in C++:
+```
+int count = 5;      // Assigns the value 5 to the variable count
+count = count + 1;  // Reassigns count to 6
+```
+Data Structure Initialization: In some programming languages, = can be used to initialize data structures like arrays and dictionaries.
+Example in Python:
+```
+my_list = [1, 2, 3]  # Initializes a list with values
+```
+Function Call Assignment: In some languages, like Python, you can use = to assign the result of a function call to a variable.
+Example in Python:
+```
+result = add(3, 4)  # Assigns the result of the add function to result
+```
+The assignment operator is essential for managing data and controlling the flow of a program. It allows you to store, update, and manipulate data throughout your code. However, it's crucial to understand the difference between the assignment operator (=) and the equality operator (== or === in some languages). The equality operator is used to compare values for equality, whereas the assignment operator is used to assign values to variables.
+
+For example, in Python:
+```
+    x = 5 assigns the value 5 to the variable x.
+    x == 5 checks if the value of x is equal to 5.
+```
+
+<h1><p align="center";>+=, -=, *= and /= - compound assignement operators</p></h1>
+The symbols +=, -= , *= , and /= are compound assignment operators used in programming languages to perform an operation (addition, subtraction, multiplication, or division) and assign the result to a variable in a more concise way. These operators combine an arithmetic operation with assignment.
+    += (Addition Assignment):
+        The += operator is used to add the value on the right-hand side to the current value of the variable on the left-hand side and then assign the result back to the variable on the left.
+    Example in Python:
+```
+x = 5
+x += 3  # Equivalent to x = x + 3
+# Now, x is 8
+```
+-= (Subtraction Assignment):
+    The -= operator is used to subtract the value on the right-hand side from the current value of the variable on the left-hand side and then assign the result back to the variable on the left.
+Example in C++:
+```
+int a = 20;
+a -= 7;  // Equivalent to a = a - 7
+// Now, a is 13
+```
+*= (Multiplication Assignment):
+    The *= operator is used to multiply the current value of the variable on the left-hand side by the value on the right-hand side and then assign the result back to the variable on the left.
+Example in Python:
+```
+b = 3
+b *= 4  // Equivalent to b = b * 4
+// Now, b is 12
+```
+/= (Division Assignment):
+    The /= operator is used to divide the current value of the variable on the left-hand side by the value on the right-hand side and then assign the result back to the variable on the left.
+Example in JavaScript:
+```
+let d = 16;
+d /= 4;  // Equivalent to d = d / 4
+// Now, d is 4
+```
+
+<h1><p align="center";>%= - modulus assignement</p></h1>
+Modulus Assignment (%=): Performs the modulus operation on the variable's current value and the value on the right-hand side, and then assigns the result back to the variable.
+
+Example in Python:
+```
+x = 10
+x %= 3  # Equivalent to x = x % 3
+# Now, x is 1
+```
+
+<h1><p align="center";>//= - floor division assignement</p></h1>
+The //= and **= symbols are assignment operators used in some programming languages for specific operations. Here's what each of them does:
+    //= (Floor Division Assignment):
+        The //= operator is used for floor division (integer division) and assignment. It divides the current value of the variable on the left-hand side by the value on the right-hand side using floor division and then assigns the result back to the variable on the left.
+        Floor division means that the result is the largest integer that is less than or equal to the exact division result. It essentially truncates any decimal places, resulting in an integer quotient.
+    Example in Python:
+    
+```
+x = 20
+x //= 3  # Equivalent to x = x // 3
+# Now, x is 6 (integer division of 20 by 3)
+```
+Some languages, like Python, use // for floor division, and the //= operator follows the same convention.
+
+<h1><p align="center";>**= - exponentiation assignement</p></h1>
+**= (Exponentiation Assignment):
+    The **= operator is used for exponentiation and assignment. It raises the current value of the variable on the left-hand side to the power of the value on the right-hand side and then assigns the result back to the variable on the left.
+Example in Python:
+
+```
+y = 3
+y **= 2  # Equivalent to y = y ** 2
+# Now, y is 9 (3 raised to the power of 2)
+```
+
+<h1><p align="center";>&= , |= , ^= - bitwise assignements</p></h1>
+Bitwise Assignment Operators (&=, |=, ^=): These operators perform bitwise AND, OR, and XOR operations, respectively, on the variable's current value and the value on the right-hand side, and then assign the result back to the variable.
+
+Example in C++ (Bitwise AND Assignment):
+```
+int a = 12;     // Binary: 1100
+a &= 6;          // Equivalent to a = a & 6 (Binary: 0110)
+// Now, a is 4 (Binary: 0100)
+```
+
+<h1><p align="center";><<= and >>= - shift assignements</p></h1>
+Shift Assignment Operators (<<=, >>=): These operators perform left or right bitwise shift operations on the variable's current value and the value on the right-hand side, and then assign the result back to the variable.
+
+Example in Python (Left Shift Assignment):
+```
+b = 8
+b <<= 2  # Equivalent to b = b << 2
+# Now, b is 32
+```
+
+<h1><p align="center";>&&= and ||= - logical assignements</p></h1>
+Logical Assignment (&&=, ||=): These operators perform logical AND and logical OR operations, respectively, on the variable's current value and the value on the right-hand side, and then assign the result back to the variable.
+
+Note: These operators are less common and are not available in all programming languages.
+
 ## Comparsion operators
 
 <h1><p align="center";>== and != - equal and not equal</p></h1>
@@ -535,15 +673,18 @@ a = 5
 b = 10
 notEqual = a != b  # notEqual is True
 ```
-<h1><p align="center";>=== and !== - strict equal and not strict inequal</p></h1>
+<h1><p align="center";>=== and !== - strict equal and not strict equal</p></h1>
 If you want to perform strict equality or inequality checks that consider both value and data type, you can use the === (strict equality) and !== (strict inequality) operators in languages like JavaScript:
     In JavaScript (strict equality):
+    
 ```
 let a = 10;
 let b = "10";
 let isStrictlyEqual = a === b;  // isStrictlyEqual is false
 ```
+
 In JavaScript (strict inequality):
+
 ```
 let x = 5;
 let y = "5";
@@ -582,10 +723,6 @@ if (x < y) {
     // Do something when x is equal to y
 }
 ```
-<h1><p align="center";><= and >= - less than or equal to AND greater than or equal to</p></h1>
-The <= (less than or equal to) and >= (greater than or equal to) operators are comparison operators used in programming to check if a value is less than or equal to or greater than or equal to another value, respectively. These operators are commonly used in conditional statements, loop control, and comparisons involving numeric and non-numeric data types. Here's how they work:
-
-
 Angle brackets < and > are used to enclose and define HTML elements. HTML elements are structured using opening and closing tags, and these tags are essentially used like parentheses to define the start and end of elements. Here's an example of how angle brackets are used in HTML:
 ```
 <p>This is a paragraph element.</p>
@@ -595,6 +732,11 @@ In the example above, <p> is the opening tag, and </p> is the closing tag. Toget
 HTML uses a markup language syntax, and angle brackets are a fundamental part of this syntax for creating and structuring web content. In HTML, tags serve to group and define elements, and their use is similar to how parentheses are used to group expressions in programming languages.
 
 So, in HTML, angle brackets < and > are indeed used as a form of "parentheses" for defining and structuring HTML elements.
+
+
+
+<h1><p align="center";><= and >= - less than or equal to AND greater than or equal to</p></h1>
+The <= (less than or equal to) and >= (greater than or equal to) operators are comparison operators used in programming to check if a value is less than or equal to or greater than or equal to another value, respectively. These operators are commonly used in conditional statements, loop control, and comparisons involving numeric and non-numeric data types. Here's how they work:
 
 
 <= (Less Than or Equal To Operator):
@@ -607,7 +749,7 @@ y = 10
 isLessThanOrEqualTo = x <= y  # isLessThanOrEqualTo is True
 ```
 
->= (Greater Than or Equal To Operator):
+\>= (Greater Than or Equal To Operator):
 The >= operator checks if the value on the left is greater than or equal to the value on the right. It returns true if the left operand is larger than or equal to the right operand and false otherwise. For example:
     In Python:
 ```
@@ -634,16 +776,231 @@ These operators are versatile and can be used with various data types, including
 
 ## Logical operators
 
-<h1><p align="center";>| - vertical bar</p></h1>
+<h1><p align="center";>| and || - vertical bar and double vertical bar or pipe</p></h1>
 The vertical bar | symbol is used in programming languages for various purposes, depending on the context and programming language. 
 Logical OR Operator:
 In some programming languages, including Python and JavaScript, the | symbol is also used as a logical OR operator. It returns true if at least one of the operands is true. For example:
     In Python:
+    
 ```
 x = True
 y = False
 result = x | y  # result is True
 ```
+Double vertical bars || have specific usage in programming languages. They are typically used as the logical OR operator. The || operator performs a logical OR operation between two Boolean values or expressions and returns true if at least one of the operands is true. Here's how it works:
+
+Logical OR Operator (||):
+    In JavaScript:
+```
+let x = true;
+let y = false;
+let result = x || y;  // result is true
+```
+
+The logical OR operator is commonly used in conditional statements, such as if and while, to control program flow based on whether at least one of the conditions is true. It's a fundamental part of boolean logic in programming and is used for making decisions and implementing branching logic in code.
+
+Here's an example of using || in an if statement:
+```
+let age = 18;
+let hasLicense = true;
+
+if (age >= 18 || hasLicense) {
+    console.log("You can drive.");
+} else {
+    console.log("You cannot drive.");
+}
+```
+
+In this example, the || operator is used to check if the person's age is 18 or older or if they have a driver's license. If either condition is true, the "You can drive." message is printed.
+
+The logical OR operator is a valuable tool for creating flexible and expressive conditional logic in programming.
+
+<h1><p align="center";>& and && - single and double ampersend</p></h1>
+The & and && symbols are used in programming languages for different purposes, primarily related to bitwise operations and logical operations, respectively. 
+
+& (Single Ampersand - Bitwise AND Operator):
+
+The & symbol is used as a bitwise AND operator in many programming languages. It performs a bitwise AND operation between the individual bits of two binary numbers or binary representations of numbers. It returns a result where each bit is set to 1 if and only if the corresponding bits in both operands are 1. For example:
+    In Python:
+```
+a = 5    # Binary: 0101
+b = 3    # Binary: 0011
+result = a & b  # result is 1 (Binary: 0001)
+```
+
+In C++:
+```
+int x = 6;    // Binary: 0110
+int y = 3;    // Binary: 0011
+int result = x & y;  // result is 2 (Binary: 0010)
+```
+&& (Double Ampersand - Logical AND Operator):
+
+The && symbol is used as a logical AND operator in programming languages. It performs a logical AND operation between two Boolean values or expressions. It returns true if both operands are true and false otherwise. The logical AND operator is used for making decisions and controlling program flow based on multiple conditions. For example:
+    In JavaScript:
+```
+let x = true;
+let y = false;
+let result = x && y;  // result is false
+```
+In Python:
+```
+a = True
+b = False
+result = a and b  # result is False
+```
+Common Use Cases:
+
+ & (Bitwise AND) is used for low-level operations on individual bits within binary numbers, such as hardware-level programming, encryption, and data manipulation.
+
+ && (Logical AND) is used for higher-level logical operations and decision-making, such as in conditional statements (if, while, for) to control program flow based on conditions.
+
+the & symbol can be combined with other symbols to form compound operators or serve specific purposes. Here are some common examples:
+Bitwise AND Assignment (&=): The &= operator combines the & (bitwise AND) operator with the assignment operator (=). It performs a bitwise AND operation between two values and assigns the result to the left operand. It is often used for manipulating and updating binary representations of values.
+        In C++:
+```
+int x = 5;     // Binary: 0101
+int mask = 3;  // Binary: 0011
+x &= mask;     // Bitwise AND assignment
+// Now, x is 1 (Binary: 0001)
+```
+Address-of Operator (& for References): In C and C++ (and some other languages), the & symbol is also used as the address-of operator. It is used to get the memory address of a variable or object, especially when working with pointers and references.
+    In C++:
+```
+int number = 42;
+int* ptr = &number;  // Assign the address of 'number' to 'ptr'
+```
+Logical AND (&&) vs. Bitwise AND (&): While && is the logical AND operator, & is the bitwise AND operator. It's essential to differentiate between them, as they have different behavior and use cases.
+    In C++:
+```
+bool a = true;
+bool b = false;
+bool logicalResult = a && b;  // logicalResult is false (logical AND)
+int x = 5;
+int y = 3;
+int bitwiseResult = x & y;   // bitwiseResult is 1 (bitwise AND)
+```
+
+<h1><p align="center";>! - exclamation mark</p></h1>
+In programming, the exclamation mark (!) is commonly used as a symbol with various meanings and usages depending on the context and programming language. Here are some of the common uses of the exclamation mark in programming:
+    Logical NOT Operator (!): The most common usage of ! is as the logical NOT operator. It negates a Boolean value, meaning it changes true to false and false to true. It's used to perform logical negation.
+        In JavaScript:
+```
+let x = true;
+let y = !x;  // y is false
+```
+
+Regular Expressions (Some Languages): In regular expressions, the ! symbol may be used as part of lookahead or lookbehind assertions to specify conditions for matching patterns without including them in the match itself.
+    In Perl (lookahead assertion):
+```
+my $text = "apple orange";
+if ($text =~ /apple(?! pie)/) {
+    print "Matched 'apple' but not 'apple pie'.\n";
+}
+```
+
+Bang Operator (Ruby): In Ruby, the exclamation mark (!) is sometimes used as a naming convention for methods that modify the object in place, indicating a potentially destructive operation.
+    In Ruby:
+```
+array = [1, 2, 3]
+array.map! { |x| x * 2 }  # Modifies the original array in place
+```
+Boolean Casting (Some Languages): In languages like JavaScript, ! can be used for implicit Boolean type casting or coercion.
+    In JavaScript:
+```
+let value = "Hello";
+let isFalsy = !value;  // isFalsy is false (implicit type coercion)
+```
+
+## Bitwise operators
+
+<h1><p align="center";>~ - tilde</p></h1>
+The tilde symbol (~) is used in programming languages for various purposes, primarily related to bitwise operations and sometimes as a mathematical operator for negation or complementing values. 
+Bitwise NOT Operator (~):
+In many programming languages, the tilde (~) is used as a bitwise NOT operator. It performs a bitwise negation operation, which means it flips the bits of a binary number, changing each 0 to 1 and each 1 to 0.
+
+For example:
+    In Python:
+```
+x = 5      # Binary: 0101
+result = ~x  # result is -6 (Binary: 1010)
+```
+The result of the bitwise NOT operation depends on the number of bits used to represent the values. In many programming languages, it assumes two's complement representation, so the result is a negative number when the original value is positive.
+
+Mathematical Negation (Some Languages):
+
+In some programming languages, particularly in mathematical contexts, the tilde (~) may be used as a symbol for negation or complementing values. However, this usage is not as common as the bitwise NOT operator.
+
+Special Use Cases (Some Languages):
+
+In certain programming languages, the tilde (~) may have specialized uses or meanings beyond its common bitwise NOT operation. For instance, in Perl, it can be used to represent filehandles, and in Ruby, it can be used in regular expressions for negative lookahead assertions.
+
+<h1><p align="center";>^ - caret</p></h1>
+The caret symbol (^) is used in programming languages for various purposes, including bitwise XOR (exclusive OR) operations, exponentiation, and sometimes as a symbol for logical XOR. 
+    Bitwise XOR Operator (^):
+        In many programming languages, the caret (^) is used as a bitwise XOR operator. It performs a bitwise XOR operation between two binary numbers, where each bit in the result is set to 1 if the corresponding bits in the operands are different.
+        Example in Python:
+```
+a = 5     # Binary: 0101
+b = 3     # Binary: 0011
+result = a ^ b  # result is 6 (Binary: 0110)
+```
+Exponentiation Operator (^):
+    In some programming languages like Python, the caret (^) is used as an exponentiation operator to calculate the power of a number.
+    Example in Python:
+```
+x = 2
+y = 3
+result = x ** y  # result is 8 (2 raised to the power of 3)
+```
+Logical XOR (Exclusive OR) Operator:
+    In some programming languages, such as Perl and Ruby, the caret (^) can also be used as a symbol for the logical XOR operator, which returns true if one and only one of the operands is true.
+    Example in Perl:
+```
+my $a = 1;
+my $b = 0;
+my $result = $a ^ $b;  # $result is true (logical XOR)
+```
+
+Escape Sequences (Regular Expressions):
+    In regular expressions, the caret (^) is often used as a special character to indicate the start of a line or string.
+    Example in JavaScript (regex):
+```
+let text = "Hello\nWorld";
+let regex = /^Hello/;  // Matches "Hello" at the start of a line
+```
+
+<h1><p align="center";><< and >> - left shift and right shift</p></h1>
+The << (left shift) and >> (right shift) symbols are used in programming languages for bitwise shift operations. These operations involve shifting the binary representation of a number to the left or right by a specified number of positions. These operations are commonly used in low-level programming, embedded systems, and situations where fine-grained control over binary data is necessary. Here's how they work:
+
+<< (Left Shift Operator):
+
+The << operator performs a left shift operation, which moves the bits of a binary number to the left by a specified number of positions. Each shift to the left effectively multiplies the number by 2 raised to the power of the shift amount. It's often used to perform fast multiplication or division by powers of 2.
+
+Example in C++:
+```
+int x = 5;   // Binary: 0101
+int result = x << 2;  // result is 20 (Binary: 10100)
+```
+
+>> (Right Shift Operator):
+
+The >> operator performs a right shift operation, which moves the bits of a binary number to the right by a specified number of positions. Each shift to the right effectively divides the number by 2 raised to the power of the shift amount. It's commonly used for fast division by powers of 2 or extracting individual bytes or bits from binary data.
+
+Example in Python:
+```
+a = 16   # Binary: 10000
+result = a >> 2   # result is 4 (Binary: 0010)
+```
+1. Bit Manipulation: Bitwise shift operations are used for manipulating individual bits or groups of bits within binary data, such as setting, clearing, or testing specific bits.
+
+2. Fast Multiplication/Division: Left shifting by powers of 2 can be used as a faster alternative to multiplication, and right shifting by powers of 2 can be used as a faster alternative to division.
+
+3. Working with Bit Flags: In embedded systems and hardware programming, bitwise shifts are often used to manipulate and check bit flags within registers or memory-mapped devices.
+
+4. Data Serialization/Deserialization: Bitwise shift operations can be used in data serialization and deserialization to extract or pack binary data into specific fields.
+
+5. Efficient Memory Allocation: In some memory allocation strategies, bitwise shifts are used to allocate memory blocks or manage memory efficiently.
 
 ## String literals
 
@@ -674,3 +1031,241 @@ formatted_string = "My name is #{name} and I am #{age} years old."
 ```
 
 F-strings, template literals, and string interpolation are powerful features that simplify the process of creating formatted strings in a way that makes code more readable and concise. These features are particularly useful when you need to combine text with variable values or expressions within strings. The "f" in f-strings generally stands for "formatted" or "formatted string," indicating that they are designed for creating strings with specific formatting needs.
+
+<h1><p align="center";>@ - at symbol</p></h1>
+The "@" symbol (@) has various uses and meanings in programming languages, and its specific function can vary significantly depending on the language and context.
+String Literals (C# and Verbatim Strings): In C#, the "@" symbol can be used to define verbatim string literals, which treat backslashes as literal characters and allow multi-line strings.
+    C# Example (Verbatim String):
+    
+```
+string filePath = @"C:\MyDocuments\file.txt";
+```
+Annotations and Decorators (Java, C#): In some programming languages like Java and C#, the "@" symbol is used to denote annotations or decorators. Annotations provide metadata about code elements, and they can affect how code is compiled or executed.
+    Java Example:
+```
+@Override
+public void someMethod() {
+  // Code here
+}
+```
+Email Addresses: In email-related applications and libraries, the "@" symbol is used to separate the username from the domain in email addresses. While not a programming language feature per se, email parsing and validation often involve handling "@"-separated email addresses.
+    Email Address Example:
+```
+username@example.com
+```
+Instance Variables (Ruby): In Ruby, the "@" symbol is used to denote instance variables. Instance variables are associated with a particular instance of a class and are used to store object-specific data.
+    Ruby Example (Instance Variable):
+```
+class MyClass
+  def initialize
+    @instance_var = 42
+  end
+end
+```
+Attribute Access (Python): In Python, the "@" symbol is used to access attributes of objects, particularly in the context of class decorators and metaclasses.
+    Python Example (Class Decorator):
+```
+@property
+def my_property(self):
+    return self._my_property
+```
+Variable Assignment (Some Scripting Languages): In some scripting languages, such as PowerShell, the "@" symbol may be used for variable assignment or manipulation.
+    PowerShell Example:
+```
+$myVariable = "Hello, World!"
+```
+
+## Template literal
+
+<h1><p align="center";>$ - dollar sign</p></h1>
+In programming, the dollar symbol ($) is used for various purposes, and its meaning and usage can vary depending on the programming language and context. Here are some common uses of the dollar symbol in programming:
+    String Interpolation and Template Literals: In some programming languages and scripting languages, the dollar symbol ($) is used to indicate string interpolation or template literals. It allows you to embed expressions or variables directly within string literals.
+        JavaScript (ES6 and later):
+
+```
+const name = "Alice";
+const greeting = `Hello, ${name}!`; // String interpolation using the dollar symbol
+```
+Shell Scripting and Unix-like Environments: In shell scripting and Unix-like operating systems, the dollar symbol ($) is used to denote environment variables. When followed by a variable name (e.g., $HOME), it represents the value of that environment variable.
+    Bash (Unix shell):
+```
+echo $USER  # Prints the current user's username
+```
+Regular Expressions: In regular expressions, the dollar symbol ($) is used as a metacharacter to match the end of a line or string.
+    Regular Expression Example (matches lines ending with "end"):
+```
+/end$/
+```
+Variable Naming: In some programming languages, such as PHP, Perl, and JavaScript (when using jQuery), the dollar symbol ($) is used as part of variable names to denote scalar variables.
+    PHP:
+```
+$count = 5; // Declaring a variable named $count
+```
+Interpolation in Template Engines: In certain template engines, like PHP, the dollar symbol ($) is used to interpolate variables and expressions within templates.
+    PHP (in a template file):
+```
+<h1>Welcome, <?php echo $user; ?>!</h1>
+```
+    
+## Separator
+
+<h1><p align="center";>_ - separator</p></h1>
+In programming, the underscore symbol (_) is used for various purposes, and its specific meaning and usage can differ depending on the programming language. 
+    Variable Naming Conventions:
+        As a Placeholder: In many programming languages, the underscore is used as a placeholder or throwaway variable name when you need to ignore or discard a variable. It's often used in situations where a variable is required for syntactic reasons but its value is not needed.
+        Example in Python:
+        
+```
+_, value = get_key_value_pair()
+# Here, we only care about 'value' and ignore the key
+```
+
+Separating Words in Identifiers: Some programming languages, like Python and Ruby, allow underscores in variable and function names to improve readability. This is often referred to as "snake_case."
+
+Example in Python:
+```
+user_name = "Alice"
+```
+
+Numeric Separators:
+    In some modern programming languages, including Python and JavaScript, underscores can be used as numeric separators within numeric literals to make large numbers more readable.
+    Example in Python (PEP 515):
+```
+billion = 1_000_000_000
+```
+Import and Namespace Usage:
+    In some languages, such as Python, the underscore can be used to indicate that a module or variable should be treated as "private" or not part of the public interface.
+    Example in Python:
+```
+from my_module import _private_function
+```
+Pattern Matching and Wildcards:
+    In some contexts, such as pattern matching and regular expressions, the underscore may be used as a wildcard character to match any value or character.
+    Example in SQL (wildcard character in a LIKE statement):
+```
+SELECT * FROM customers WHERE name LIKE 'John _mith';
+```
+Library-Specific Use:
+    Some libraries or frameworks may use the underscore for specific purposes, such as naming conventions for private class members or placeholders in template languages.
+Internationalization and Translation:
+    In some software development contexts, the underscore may be used as a separator in file and directory names to facilitate internationalization and translation efforts.
+    Example in file naming: my_app_en_US.properties
+
+## Escape character
+
+<h1><p align="center";>\ - backslash</p></h1>
+The backslash (\) symbol is used in programming languages for various purposes, and its meaning and usage can vary significantly depending on the language and context. Escape Sequences in Strings:
+   Escape Characters: In many programming languages, the backslash is used as an escape character. It is followed by another character to represent special characters, control characters, or Unicode characters within string literals. Common escape sequences include \n for a newline, \t for a tab, and \" to escape double quotes within a string.
+   Example in C++:
+
+```
+    std::cout << "Hello, \nWorld!\n";
+```
+Unicode Escapes: In some languages, like Java and Python, you can use backslashes followed by Unicode hexadecimal values to represent Unicode characters.
+Example in Java:
+```
+String smiley = "\u263A"; // Represents a smiley face (☺)
+```
+File Paths and Directories:
+    File Paths: In many programming contexts, especially on Windows and Unix-like systems, the backslash is used as a directory separator in file paths. For example, C:\Program Files\ is a file path on Windows.
+    Escape in File Paths: In some languages, like Python, you may need to use double backslashes (\\) or a raw string (preceded by r or R) to represent file paths that contain backslashes.
+    Example in Python:
+```
+path = "C:\\Program Files\\MyApp"
+```
+Regular Expressions:
+    Escape Special Characters: In regular expressions, the backslash is used to escape special characters, allowing you to search for those characters in a text pattern.
+    Example in JavaScript:
+```
+const regex = /\./; // Matches a literal period (.)
+```
+Escape Sequences: It's also used to define escape sequences in regular expressions for special characters like \n (newline) or \d (digit).
+Line Continuation:
+    In some programming languages, you can use a backslash at the end of a line to indicate that the statement continues on the next line. This is often used for long lines of code to improve readability.
+    Example in Python:
+```
+long_text = "This is a very long piece of text that \
+             continues on the next line for better readability."
+```
+Regular Characters:
+    In some contexts, especially when a character is part of a regular expression pattern or a string literal, the backslash can be used to indicate that a character should be treated as a regular character and not as a special symbol.
+    Example in Python (escaping a backslash):
+```
+text = "This is a backslash: \\"
+```
+
+## Ternary conditional
+
+<h1><p align="center";>? - question mark</p></h1>
+In programming, the question mark (?) symbol is used for various purposes, and its meaning and usage can vary depending on the programming language and context. Here are some common uses of the question mark symbol in programming:
+    Ternary Conditional Operator: In many programming languages, the question mark (?) is used as part of the ternary conditional operator, also known as the conditional expression. It allows you to create conditional expressions with a compact syntax.
+        C/C++/C#:
+
+```
+int x = 10;
+int y = (x > 5) ? 20 : 30; // If x > 5, y is assigned 20; otherwise, y is assigned 30
+```
+Null Conditional Operator (?.): In some programming languages like C#, the ?. operator is used to safely access properties or methods of an object, checking for null values along the way. It's known as the null conditional operator or null propagation operator.
+    C#:
+```
+string name = person?.Name; // Access the 'Name' property if 'person' is not null; otherwise, 'name' is null
+```
+Optional Parameters: In some languages, like TypeScript and some modern JavaScript versions (using Babel or TypeScript), the question mark (?) can be used to denote optional function parameters.
+    TypeScript:
+```
+function greet(name?: string) {
+  if (name) {
+    console.log(`Hello, ${name}!`);
+  } else {
+    console.log(`Hello, World!`);
+  }
+}
+```
+Regular Expressions: In regular expressions, the question mark (?) is used to denote quantifiers, indicating that the preceding character or group is optional (appearing zero or one time).
+    Regular Expression Example (matches "color" or "colour"):
+```
+/colou?r/
+```
+Nullable Types (SQL): In SQL, the question mark can be used as a placeholder for parameters in prepared statements. It allows you to provide values for placeholders when executing queries.
+    SQL Example (with a prepared statement):
+```
+SELECT * FROM users WHERE age > ?;
+```
+Generic Type Parameters (C#): In C#, the question mark (?) can be used to define nullable value types when declaring generic type parameters.
+    C# Example (Nullable Generic Type Parameter):
+```
+List<int?> numbers = new List<int?>();
+```
+    
+## Comment
+
+<h1><p align="center";># - hash</p></h1>
+In programming, the # symbol is commonly used for comments and preprocessor directives in various programming languages. The specific usage of # can vary depending on the language, so I'll explain its primary uses:
+    Comments: In most programming languages, # is used to indicate the beginning of a comment. Comments are not executed as part of the program but are added for human-readable explanations or annotations within the code. Comments are ignored by the compiler or interpreter.
+        Python:
+```
+# This is a Python comment
+```
+
+Preprocessor Directives (C/C++): In C and C++ programming, # is used to indicate preprocessor directives. These are instructions to a preprocessor, which is a tool that runs before compilation. Preprocessor directives are used for including header files, defining macros, conditional compilation, and other tasks.
+    C/C++:
+```
+#include <stdio.h>  // Include a standard library header
+#define PI 3.14159   // Define a macro
+```
+Hashtags or Pound Signs in Strings: In some programming languages, # may be used as part of a string or character literal. In this context, it's treated as a regular character and not as a special symbol.
+    Ruby (using # in a string):
+```
+message = "This is a # symbol in a string."
+```
+
+Hexadecimal Notation (Assembly Languages): In assembly languages, # can be used to indicate immediate values or constants in hexadecimal notation.
+    x86 Assembly:
+```
+MOV AL, #0x0A ; Move the value 10 (in hexadecimal) into AL
+```
+Numeric Keypad (Assembly Languages): In some assembly languages, # is used to represent keys on a numeric keypad for input processing.
+    ARM Assembly (Keycode for Number 1):
+```
+LDR R0, =#1 ; Load register R0 with the value 1
+```
