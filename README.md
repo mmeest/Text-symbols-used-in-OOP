@@ -554,6 +554,7 @@ The symbols +=, -= , *= , and /= are compound assignment operators used in progr
     += (Addition Assignment):
         The += operator is used to add the value on the right-hand side to the current value of the variable on the left-hand side and then assign the result back to the variable on the left.
     Example in Python:
+    
 ```
 x = 5
 x += 3  # Equivalent to x = x + 3
