@@ -3,7 +3,7 @@ Different text symbols used in object oriented programming.
 
 ## Contents
 - [Punctuation and Delimiters](#punctuation-and-delimiters)
-- [Assignement Operator](#assignement-operator)
+- [Assignement Operators](#assignement-operators)
 - [Arithmetic Operators](#arithmetic-operators)
 - [Comparsion Operators](#comparsion-operators)
 - [Logical Operators](#logical-operators)
@@ -511,6 +511,8 @@ day_of_week = (5 + 31) % 7  # day_of_week is 5 (0 is Sunday, 5 is Friday)
 ```
 
 ## Assignement operators
+
+<h1><p align="center";>= - equal sign or assignement</p></h1>
 In programming, the single equal sign (=) is used as the assignment operator. Its primary purpose is to assign a value to a variable or a data structure. The assignment operator is fundamental to the process of storing and manipulating data in computer programs. Here's how it works:
 
 Assignment Operator (=):
@@ -1075,7 +1077,7 @@ Variable Assignment (Some Scripting Languages): In some scripting languages, suc
 $myVariable = "Hello, World!"
 ```
 
-## Template literal
+## Template literals
 
 <h1><p align="center";>$ - dollar sign</p></h1>
 In programming, the dollar symbol ($) is used for various purposes, and its meaning and usage can vary depending on the programming language and context. Here are some common uses of the dollar symbol in programming:
@@ -1106,7 +1108,26 @@ Interpolation in Template Engines: In certain template engines, like PHP, the do
 ```
 <h1>Welcome, <?php echo $user; ?>!</h1>
 ```
-    
+
+<h1><p align="center";>` - accent grave</p></h1>
+Template Literals (JavaScript and Others): In JavaScript and similar languages, the accent grave is used to create template literals. Template literals allow for string interpolation, making it easy to embed expressions within string literals.
+Example in JavaScript (ES6 and later):
+
+```
+const name = "Alice";
+const greeting = `Hello, ${name}!`; // String interpolation using the accent grave
+```
+Character Literals (C, C++, and Others): In some programming languages like C and C++, the accent grave is used to define character literals. It allows you to represent characters using their ASCII or Unicode values.
+Example in C:
+```
+char myChar = `A`; // Represents the character 'A'
+```
+Raw Strings (Python): In Python, the accent grave is not used as a standalone symbol but can be part of the syntax for creating raw string literals. Raw strings treat backslashes as literal characters, making them useful for regular expressions and file paths.
+Example in Python:
+```
+path = r'C:\Program Files'  # This is a raw string
+```
+
 ## Separator
 
 <h1><p align="center";>_ - separator</p></h1>
