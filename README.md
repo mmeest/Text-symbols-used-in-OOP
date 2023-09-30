@@ -1328,6 +1328,7 @@ LDR R0, =#1 ; Load register R0 with the value 1
 Multi-Line Comments:
     Delimited by Symbols (/* */): Commonly used in languages like C, C++, and Java. Multi-line comments are enclosed within /* and */.
     Example in Java:
+    
 ```
 /*
  * This is a multi-line comment.
@@ -1400,6 +1401,7 @@ SELECT /*+ INDEX(employees idx_emp_id) */ * FROM employees;
 <h1><p align="center";>''' ''' or """ """ - triple quotes</p></h1>
 Triple Double Quotes (''' ''' or """ """): Commonly used in Python for multi-line comments. Text enclosed in triple double quotes serves as a multi-line comment.
 Example in Python:
+
 ```
 """
 This is a multi-line comment.
