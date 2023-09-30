@@ -108,13 +108,16 @@ my_tuple = (1, 2, 3)
 In many programming languages, single quotes are used to define character literals. 
 A character literal represents a single character and is enclosed within single quotes.
     In C and C++:
+    
 ```
 char myChar = 'A';
 ```
+
     In Python:
 ```
 my_char = 'B'
 ```
+
     In Java:
 ```
 char myChar = 'X';
