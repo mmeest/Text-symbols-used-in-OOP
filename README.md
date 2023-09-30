@@ -10,7 +10,7 @@ Different text symbols used in object oriented programming.
 - [String Literals](#string-literals)
 - [Template Literals](#template-literals)
 - [Separator](#separator)
-- [Escape character](#escape-character)
+- [Escape characters](#escape-characters)
 - [Ternary Conditional](#ternary-conditional)
 - [Comment](#comment)
 
@@ -1172,7 +1172,7 @@ Internationalization and Translation:
     In some software development contexts, the underscore may be used as a separator in file and directory names to facilitate internationalization and translation efforts.
     Example in file naming: my_app_en_US.properties
 
-## Escape character
+## Escape characters
 
 <h1><p align="center";>\ - backslash</p></h1>
 The backslash (\) symbol is used in programming languages for various purposes, and its meaning and usage can vary significantly depending on the language and context. Escape Sequences in Strings:
@@ -1214,6 +1214,36 @@ Regular Characters:
 ```
 text = "This is a backslash: \\"
 ```
+
+1. Backslash (\): The backslash is the most commonly used escape character in programming languages. It is used to escape special characters or to introduce escape sequences.
+        \n: Represents a newline character.
+        \t: Represents a tab character.
+        \\: Represents a literal backslash character.
+        \": Represents a double quote character within a string.
+        \': Represents a single quote or apostrophe character within a string.
+        \xHH or \uHHHH: Represents a character with a specific hexadecimal Unicode value.
+
+2. Carriage Return (\r): Represents a carriage return character. Used in some languages for text formatting and moving the cursor to the beginning of a line.
+
+3. Line Feed (\n): Represents a newline character. Used to start a new line of text.
+
+4. Tab (\t): Represents a tab character. Used for creating horizontal indentation.
+
+5. Unicode Escape (\u or \U): Represents a Unicode character using its hexadecimal Unicode code point. \u is commonly used for a 16-bit Unicode character, while \U is used for a 32-bit Unicode character.
+
+6. Octal Escape (\nnn): Represents a character using its octal ASCII value. The nnn is a sequence of up to three octal digits.
+
+7. Hexadecimal Escape (\xHH): Represents a character using its hexadecimal ASCII value. The HH is a two-digit hexadecimal number.
+
+8. Alert or Bell (\a): Produces an audible or visible alert, depending on the context.
+
+9. Vertical Tab (\v): Represents a vertical tab character, which can be used for formatting text.
+
+10. Form Feed (\f): Represents a form feed character, which can be used for page breaks or text formatting.
+
+11. Null (\0 or \00): Represents the null character, often used to terminate strings or mark the end of a text.
+
+12. Control Characters (\cX): Represents control characters, where X is an uppercase letter, such as \cA for Ctrl+A.
 
 ## Ternary conditional
 
