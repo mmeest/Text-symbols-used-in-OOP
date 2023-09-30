@@ -4,6 +4,7 @@ Different text symbols used in object oriented programming.
 ## Contents
 - [Punctuation and Delimiters](#punctuation-and-delimiters)
 - [Operators](#Operators)
+- [String literals](#string-literals)
 
 ## Punctuation and Delimiters
 
@@ -330,3 +331,210 @@ person.age = 28;        // Adding the "age" property using the dot operator
     ==, <=, >=: Comparison operators for equality, less than or equal to, and greater than or equal to, respectively.
     !: Logical NOT operator.
     !=: Not equal operator.
+
+<h1><p align="center";>+ and ++ - hyphen or minus</p></h1>    
+
+In programming, the plus sign (+) and the double plus sign (++) are two distinct operators with different purposes. 
+    Plus Sign (+):
+        Addition Operator: The plus sign (+) is primarily used as an addition operator in most programming languages. It performs arithmetic addition, adding two or more numeric values together. For example:
+            In Python:    
+```
+result = 5 + 3  # result is 8
+```
+
+String Concatenation: In some programming languages, such as JavaScript, the plus sign can also be used for string concatenation, which involves combining two or more strings together. For example:
+```
+let greeting = "Hello, ";
+let name = "Alice";
+let message = greeting + name;  // message is "Hello, Alice"
+```
+Double Plus Sign (++) - Increment Operator:
+    The double plus sign (++) is used as an increment operator. It is used to increase the value of a variable by 1. The increment operation can be applied to numeric variables, including integers and floating-point numbers. For example:
+        In C++:
+```
+int x = 5;
+x++;  // Increment x by 1, x is now 6
+```
+
+The ++ operator can be used in both prefix and postfix forms, depending on whether you want to increment the variable before or after its current value is used in an expression:
+    Prefix Increment (++x or ++variable) increments the variable and then returns its updated value.
+    Postfix Increment (x++ or variable++) returns the current value of the variable and then increments it.
+For example, in C++:     
+```
+int x = 5;
+int y = ++x;  // Prefix increment: x is incremented to 6, y is assigned 6
+int z = x++;  // Postfix increment: z is assigned 6, then x is incremented to 7
+```
+The plus sign (+) is a basic arithmetic operator used for addition and string concatenation, while the double plus sign (++) is specifically used for incrementing numeric variables. The behavior and availability of these operators may vary slightly between programming languages, so it's important to refer to the documentation of the language you are working with for precise details.
+
+<h1><p align="center";>- and -- - hyphen or minus</p></h1>
+The hyphen or minus sign (-) is a common symbol in programming languages with several important uses. Here are some of the primary ways the minus sign is used in programming:
+    Subtraction: The most fundamental use of the minus sign is for arithmetic subtraction. It is used to subtract one numeric value from another. For example:
+        In Python:
+        
+```
+result = 10 - 5  # result is 5
+```
+
+Decrement: In C-like languages (e.g., C, C++, C#), the minus sign is used as the decrement operator (--). It decreases the value of a variable by one. For example:
+```
+int x = 10;
+x--;  // x is now 9
+```
+Subtraction Assignment: In many programming languages, the minus sign can be used in combination with the assignment operator (=) to subtract a value from a variable and assign the result back to the variable. For example:
+    In Python:
+```
+x = 10
+x -= 3  # x is now 7
+```
+String Concatenation (in some languages): In some scripting languages like JavaScript, the minus sign can be used for string concatenation if one or both operands are strings. However, the plus sign (+) is more commonly used for string concatenation.
+    In JavaScript:
+```
+let result = "Hello, " - "World!";  // result is NaN (Not-a-Number)
+```
+
+<h1><p align="center";>* and ** - asterisk and double asterisk</p></h1>
+The asterisk (*) and double asterisk (**) symbols have different meanings and usages in programming, depending on the context and programming language. Here's an overview of their common uses:
+
+Asterisk (*) symbol:
+    Multiplication Operator: The asterisk (*) is primarily used as the multiplication operator in most programming languages. It is used to perform arithmetic multiplication between two or more numeric values. For example:
+        In Python:
+```
+result = 5 * 3  # result is 15
+```
+Pointer Declaration and Dereferencing: In languages like C and C++, the asterisk is used to declare and dereference pointers. It allows you to work with memory addresses and manipulate data indirectly through pointers. For example:
+    Pointer Declaration:
+```
+int* ptr;  // Declare a pointer to an integer
+```    
+Pointer Dereferencing:
+```
+int value = 10;
+int* ptr = &value;  // Assign the address of 'value' to 'ptr'
+int result = *ptr;  // Dereference 'ptr' to get the value, result is 10
+```
+String Repetition: In some programming languages, such as Python, the asterisk can be used for string repetition. It allows you to repeat a string multiple times. For example:
+    In Python:
+```
+repeated_string = "abc" * 3  # repeated_string is "abcabcabc"
+```
+Double Asterisk () symbol:**
+    Exponentiation Operator: The double asterisk (**) is used as an exponentiation operator in some programming languages. It raises a base number to the power of an exponent. For example:
+        In Python:
+```
+result = 2 ** 3  # result is 8 (2 raised to the power of 3)
+```
+Keyword Arguments (Python): In Python, the double asterisk (**) is used in function definitions to capture keyword arguments in the form of a dictionary. This allows functions to accept a variable number of named arguments. For example:
+```
+def print_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_info(name="Alice", age=30, city="Anytown")
+```
+   In this example, **kwargs captures the keyword arguments as a dictionary.
+The specific usage and behavior of the asterisk (*) and double asterisk (**) symbols may vary from one programming language to another, so it's essential to consult the documentation of the programming language you are working with to understand their precise meanings and usages in that language.
+
+<h1><p align="center";>/ and // - forward slash and double forward slash</p></h1>
+
+In programming, the forward slash (/) and double forward slash (//) symbols have different meanings and usages, primarily related to division and comments, respectively. 
+Forward Slash (/) symbol:
+    Division Operator: The forward slash (/) is primarily used as the division operator in most programming languages. It is used to perform arithmetic division between two numeric values. For example:
+        In Python:
+```
+result = 10 / 2  # result is 5.0 (floating-point division)
+```
+Path Separation (File Paths and URLs): In file systems and web development, the forward slash is commonly used as a path separator to separate directory or folder names in file paths and URLs. For example:
+    In file paths (Windows):
+```
+C:\Users\Username\Documents\file.txt
+```
+In URLs:
+```
+https://www.example.com/page.html
+```
+Regular Expressions: In some programming languages, the forward slash may be used as a delimiter in regular expressions to indicate the beginning and end of a pattern. For example:
+    In JavaScript:
+```
+const regex = /pattern/;
+```
+Double Forward Slash (//) symbol:
+    Single-Line Comments: The double forward slash (//) is commonly used to denote single-line comments in many programming languages. Comments are used to provide explanatory notes within the code that are ignored by the compiler or interpreter. For example:
+        In JavaScript:
+```
+// This is a single-line comment in JavaScript
+```
+Floor Division (//):
+In Python, the double forward slash (//) is used as the floor division operator. Floor division divides two numbers and rounds down to the nearest integer, resulting in an integer quotient. This means that the fractional part of the division is discarded, and the result is always an integer or integer-like value.
+Example:
+```
+result = 10 // 3  # result is 3
+```
+In this example, 10 // 3 performs floor division, resulting in 3 because the division of 10 by 3 equals 3.333..., which is rounded down to the nearest integer.
+It's important to note that not all programming languages use // for floor division. The behavior of the division operator may vary between languages, so it's essential to consult the documentation of the specific programming language you are using to understand how division and floor division are handled.
+
+URLs (Web Development): In web development, the double forward slash (//) is used to indicate a URL that is relative to the current protocol (HTTP or HTTPS). For example:
+```
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+```
+Preprocessor Directives (C/C++): In C and C++ programming, the double forward slash (//) is sometimes used as part of preprocessor directives, such as #define, to indicate that a line is a comment. For example:
+```
+#define MAX_VALUE 100 // This is a comment
+```
+
+<h1><p align="center";>% - percend or modulo</p></h1>
+In programming, the percent symbol (%) is primarily used as the modulo operator, which calculates the remainder of a division operation between two numeric values. 
+Modulo Operator (%):
+    Modulo Operation: The percent symbol (%) is used to perform a modulo operation, which calculates the remainder when one number is divided by another. It returns the remainder as the result. For example:
+        In Python:
+        
+```
+result = 10 % 3  # result is 1 (10 divided by 3 has a remainder of 1)
+```
+Checking for Even or Odd: The modulo operator is often used to determine whether a number is even or odd. If a number modulo 2 equals 0, it's even; otherwise, it's odd.
+    In Python:
+```
+is_even = 12 % 2 == 0  # is_even is True (12 is even)
+is_odd = 7 % 2 == 1    # is_odd is True (7 is odd)
+```
+Wrapping Values: The modulo operator can be used to create cyclical or wrapping behavior for values within a certain range. For example, you can use modulo to cycle through a list of items or to wrap an angle measurement around a circle (e.g., degrees from 0 to 360).
+    In Python (cycling through a list):
+```
+items = ["A", "B", "C", "D"]
+index = 9 % len(items)  # index is 1 (cycling back to the beginning of the list)
+```
+Calendar Operations: The modulo operator is sometimes used in date and time calculations, especially when dealing with periodic events or repeating patterns.
+    In Python (calculating the day of the week for a date):
+```
+day_of_week = (5 + 31) % 7  # day_of_week is 5 (0 is Sunday, 5 is Friday)
+```
+
+## String literals
+
+<h1><p align="center";>f-strings</p></h1>
+
+The letter "f" in programming languages is often associated with "f-strings," which are a feature found in some programming languages for creating formatted strings in a concise and readable manner. F-strings are a way to embed expressions inside string literals by prefixing the string with an "f" or "F." The expressions within the string are enclosed in curly braces {} and evaluated at runtime. Here's how f-strings work in a few programming languages:
+
+Python (3.6 and later): In Python, f-strings allow you to embed expressions and variables directly into string literals. You create an f-string by prefixing a string with an "f" or "F," and you can include expressions inside curly braces {} within the string. For example:
+
+```
+name = "Alice"
+age = 30
+formatted_string = f"My name is {name} and I am {age} years old."
+```
+In this example, the values of name and age are interpolated into the string.
+
+JavaScript (Template Literals): While not called f-strings, JavaScript has a similar feature called "template literals." You create a template literal by enclosing a string in backticks (`) instead of single or double quotes. You can then embed expressions within ${} placeholders. For example:
+```
+const name = "Bob";
+const age = 25;
+const formattedString = `My name is ${name} and I am ${age} years old.`;
+```
+Ruby (String Interpolation): Ruby allows for string interpolation using the #{} syntax within double-quoted strings. Although not exactly the same as f-strings, it achieves a similar result:
+```
+name = "Charlie"
+age = 35
+formatted_string = "My name is #{name} and I am #{age} years old."
+```
+
+F-strings, template literals, and string interpolation are powerful features that simplify the process of creating formatted strings in a way that makes code more readable and concise. These features are particularly useful when you need to combine text with variable values or expressions within strings. The "f" in f-strings generally stands for "formatted" or "formatted string," indicating that they are designed for creating strings with specific formatting needs.
