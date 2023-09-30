@@ -7,13 +7,6 @@ Different text symbols used in object oriented programming.
 
 ## Punctuation and Delimiters
 
-    ;: Semicolon is often used as a statement terminator in many programming languages.
-    ' and ": Single and double quotation marks are used to denote string literals.
-    ( and ): Parentheses are used for grouping expressions and function call arguments.
-    { and }: Curly braces are used to define blocks of code in languages like C, C++, Java, and JavaScript.
-    [ and ]: Square brackets are often used for defining arrays and accessing elements in them.
-    ,: Comma is used to separate items in a list or function arguments.
-
 <h1><p align="center";>; - Semicolon</p></h1>
 Semicolon is a punctuation symbol commonly used in many programming languages. 
 Its primary purpose is to terminate statements or separate multiple statements 
@@ -240,6 +233,33 @@ used to define multiple parameters in function declarations. For example:
 int add(int a, int b) {
     return a + b;
 }
+```
+
+<h1><p align="center";>. - Dot</p></h1>
+In programming, the dot (.) is a commonly used punctuation symbol that serves various purposes, 
+depending on the context and programming language. Here are some of the primary uses of the dot in programming:
+Member Access Operator: The dot is frequently used as the member access operator 
+to access members (variables or methods) of objects or structures. 
+It allows you to navigate the hierarchy of properties and methods within an object or data structure. 
+    In Python:
+```
+person = {"name": "Alice", "age": 30}
+name = person["name"]  # Accessing the "name" property using square brackets
+age = person.age      # Accessing the "age" property using the dot operator
+```
+Method Invocation: When you have an object with associated methods, 
+the dot operator is used to call those methods. For example:
+    In Java:
+```
+String greeting = "Hello, World!";
+int length = greeting.length();  // Calling the `length` method using the dot operator
+```
+Object Property Assignment: In JavaScript, you can use the dot operator 
+to add or modify properties of objects. For example:
+```
+const person = {};
+person.name = "David";  // Adding the "name" property using the dot operator
+person.age = 28;        // Adding the "age" property using the dot operator
 ```
 
 ## Operators
