@@ -12,7 +12,7 @@ Different text symbols used in object oriented programming.
 - [Separator](#separator)
 - [Escape characters](#escape-characters)
 - [Ternary Conditional](#ternary-conditional)
-- [Comment](#comment)
+- [Comments](#comments)
 
 ## Punctuation and Delimiters
 
@@ -1288,7 +1288,7 @@ Generic Type Parameters (C#): In C#, the question mark (?) can be used to define
 List<int?> numbers = new List<int?>();
 ```
     
-## Comment
+## Comments
 
 <h1><p align="center";># - hash</p></h1>
 In programming, the # symbol is commonly used for comments and preprocessor directives in various programming languages. The specific usage of # can vary depending on the language, so I'll explain its primary uses:
@@ -1319,4 +1319,87 @@ Numeric Keypad (Assembly Languages): In some assembly languages, # is used to re
     ARM Assembly (Keycode for Number 1):
 ```
 LDR R0, =#1 ; Load register R0 with the value 1
+```
+
+<h1><p align="center";>/* ... */ and /** ... */ - delimiters</p></h1>
+Multi-Line Comments:
+    Delimited by Symbols (/* */): Commonly used in languages like C, C++, and Java. Multi-line comments are enclosed within /* and */.
+    Example in Java:
+```
+/*
+ * This is a multi-line comment.
+ * It can span multiple lines.
+ */
+```
+Documentation Comments:
+    Some languages provide a special syntax for documentation comments that can be used to generate documentation from the code. For example, Java uses Javadoc comments, and C# uses XML comments.
+    Example in Java (Javadoc comment):
+
+```
+/**
+ * This is a Javadoc comment used for documentation generation.
+ * It includes information about classes, methods, and parameters.
+ */
+```
+<h1><p align="center";><!-- and --> - enclosing tag comments</p></h1>
+HTML (Hypertext Markup Language) comments are used to add explanatory or descriptive text within an HTML document. Comments in HTML are not displayed in the browser and do not affect the rendering of the web page. Instead, they serve as documentation, notes for developers, or reminders about the structure and purpose of the HTML code.
+
+HTML comments are enclosed within <!-- and --> tags and can be placed anywhere in the HTML document. Here's the basic syntax for an HTML comment:
+```
+<!-- This is an HTML comment -->
+```
+Key points about HTML comments:
+    Invisibility: HTML comments are not visible to users when they view a web page in a web browser. They are purely for developers' reference and documentation.
+    Placement: You can place HTML comments within the <html>, <head>, <body>, or any other HTML element. They can also span multiple lines.
+    Nested Comments: HTML comments cannot be nested. If you try to nest comments, the first closing --> encountered will close the entire comment block.
+```
+<!-- This is a valid comment -->
+<!-- This <!-- is not --> a valid comment -->
+```
+Use Cases: HTML comments are commonly used for the following purposes:
+        Adding notes or explanations about specific sections of code.
+        Temporarily removing or "commenting out" code without deleting it.
+        Providing attribution for the code or indicating the author.
+        Documenting changes, bug fixes, or TODOs.
+
+Example of HTML comments in an HTML document:
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <!-- This is a comment in the head section -->
+</head>
+<body>
+    <h1>Welcome to My Web Page</h1>
+    <p>This is some content on the page.</p>
+    
+    <!--
+    This is a multi-line comment.
+    It provides additional information about the page structure.
+    -->
+
+    <footer>
+        <p>&copy; 2023 My Company</p>
+        <!-- Author: John Doe -->
+    </footer>
+</body>
+</html>
+```
+
+<h1><p align="center";>/*+ ... */ - inline comment</p></h1>
+Inline Comments (Database-Specific): Some database systems, like Oracle, support inline comments using /*+ ... */. These comments can affect query optimization.
+
+```
+SELECT /*+ INDEX(employees idx_emp_id) */ * FROM employees;
+```
+
+<h1><p align="center";>''' ''' or """ """ - triple quotes</p></h1>
+Triple Double Quotes (''' ''' or """ """): Commonly used in Python for multi-line comments. Text enclosed in triple double quotes serves as a multi-line comment.
+Example in Python:
+```
+"""
+This is a multi-line comment.
+It can span multiple lines.
+"""
 ```
