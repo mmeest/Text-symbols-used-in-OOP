@@ -559,7 +559,7 @@ Preprocessor Directives (C/C++): In C and C++ programming, the double forward sl
 #define MAX_VALUE 100 // This is a comment
 ```
 
-<h1><p align="center";>% - percent or modulo</p></h1>
+<h1><p align="center";>% and % - percent and double percend or modulo or mod</p></h1>
 In programming, the percent symbol (%) is primarily used as the modulo operator, which calculates the remainder of a division operation between two numeric values. 
 Modulo Operator (%):
     Modulo Operation: The percent symbol (%) is used to perform a modulo operation, which calculates the remainder when one number is divided by another. It returns the remainder as the result. For example:
@@ -585,6 +585,33 @@ Calendar Operations: The modulo operator is sometimes used in date and time calc
 ```
 day_of_week = (5 + 31) % 7  # day_of_week is 5 (0 is Sunday, 5 is Friday)
 ```
+
+The "%%" symbol does not have a standard or widely recognized usage in mainstream programming languages. Its meaning and usage can vary greatly depending on the specific context and the programming language or tool in which it is used.
+
+1. String Formatting (Custom Usage):
+        In some custom string formatting or templating systems, "%%" might be used to represent a literal "%" character when you want to include a "%" symbol in the formatted output. This is often used when "%" has a special meaning for string interpolation or formatting.
+    Example (hypothetical custom format): "Your discount is 20%% off!"
+2. Special Syntax (Custom Usage):
+        In specific programming environments or libraries, "%%" might be used as part of a special syntax or pattern matching feature, but this usage would be specific to that environment or library and not widely recognized.
+3. Mathematical or Computational Usage (Custom Usage):
+        In some mathematical or computational contexts, "%%" might be used as a placeholder or delimiter for specific operations or calculations, but this would depend on the specific problem domain or application.
+4. In many programming languages, especially those used for scripting and data analysis, the "%%" symbol (often pronounced as "modulo" or "mod") is used to determine whether a given number (usually an iteration count) is evenly divisible by another number. This is commonly used in loops to perform certain actions every nth iteration, such as displaying a progress indicator, updating a counter, or executing specific code.
+```
+for i in range(1, N + 1):
+    if i %% M == 0:
+        # Code to execute every Mth iteration
+```
+In this example:
+    "i" represents the current iteration.
+    "N" is the total number of iterations.
+    "M" is the desired interval at which you want to perform a specific action.
+The condition i %% M == 0 checks whether "i" is evenly divisible by "M." If it is, the code inside the if statement is executed on every Mth iteration.
+
+For example, if you want to print a progress update every 10th iteration in a loop, you would use if i %% 10 == 0, as you mentioned. This is a common technique for controlling and monitoring the progress of loops and batch processes.
+
+The "%%" operator is often used in this context because it provides a straightforward way to determine whether an iteration is a multiple of a specific number, making it easy to perform actions at regular intervals during the loop execution.
+
+Here's how it works in pseudocode or some programming languages:
 
 ## Assignement operators
 
