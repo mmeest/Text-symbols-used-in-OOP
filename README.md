@@ -2,6 +2,7 @@
 Different text symbols used in object oriented programming.
 
 ## Contents
+- [Example Code](#example-code)
 - [Punctuation and Delimiters](#punctuation-and-delimiters)
 - [Arrow Function](#arrow-function)
 - [Arithmetic Operators](#arithmetic-operators)
@@ -16,6 +17,121 @@ Different text symbols used in object oriented programming.
 - [Escape characters](#escape-characters)
 - [Ternary Conditional](#ternary-conditional)
 - [Comments](#comments)
+
+## Example Code
+Example of Python code that uses different symbols used in programming:
+```
+# Define a list with some numbers
+numbers = [1, 2, 3, 4, 5]
+
+# Iterate through the list using a for loop
+for number in numbers:
+    # Check if the number is even
+    if number % 2 == 0:
+        # If even, square the number and print it
+        squared = number ** 2
+        print(f"The square of {number} is {squared}.")
+    else:
+        # If odd, increment the number and print it
+        incremented = number + 1
+        print(f"The incremented value of {number} is {incremented}.")
+
+# Define a dictionary with some key-value pairs
+info = {
+    'name': 'Alice',
+    'age': 30,
+    'city': 'Wonderland',
+}
+
+# Access and print values from the dictionary
+print(f"{info['name']} lives in {info['city']}.")
+
+# Define a function that takes two arguments and returns their sum
+def add(x, y):
+    return x + y
+
+# Call the function with some values and print the result
+result = add(10, 20)
+print(f"The sum is: {result}")
+
+# Define a class with a constructor and a method
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introduce(self):
+        print(f"My name is {self.name}, and I am {self.age} years old.")
+
+# Create an instance of the Person class and call the method
+alice = Person('Alice', 30)
+alice.introduce()
+
+# Use some logical operators
+x = 5
+y = 10
+if x < y and y != 0:
+    print("x is less than y, and y is not equal to 0.")
+
+# Use a ternary conditional expression
+result = "even" if x % 2 == 0 else "odd"
+print(f"x is {result}.")
+
+# Define a multiline string with triple quotes
+multiline_string = """
+This is a multiline string.
+It can span multiple lines.
+"""
+
+# Use escape sequences for special characters
+escaped_string = "This is an escaped newline: \nAnd a tab character: \t"
+
+# Use string formatting with placeholders
+name = "Bob"
+age = 25
+formatted_string = f"Hello, my name is {name}, and I am {age} years old."
+
+# Define and use a variable with a global scope
+global_var = 100
+
+# Define and use a variable with a local scope
+def local_variable_example():
+    local_var = 50
+    print(f"Local variable: {local_var}")
+
+local_variable_example()
+
+# Use a list comprehension to create a new list
+original_list = [1, 2, 3, 4, 5]
+squared_list = [x ** 2 for x in original_list]
+
+# Use bitwise operators
+bitwise_and = 3 & 5
+bitwise_or = 3 | 5
+bitwise_xor = 3 ^ 5
+bitwise_not = ~3
+
+# Print the results
+print(f"Bitwise AND: {bitwise_and}")
+print(f"Bitwise OR: {bitwise_or}")
+print(f"Bitwise XOR: {bitwise_xor}")
+print(f"Bitwise NOT: {bitwise_not}")
+
+# Use a while loop
+count = 0
+while count < 5:
+    print(f"Count: {count}")
+    count += 1
+
+# Use the "in" operator to check for membership in a list
+fruits = ['apple', 'banana', 'cherry']
+if 'banana' in fruits:
+    print("Banana is in the list of fruits.")
+
+# Use the "not in" operator
+if 'pear' not in fruits:
+    print("Pear is not in the list of fruits.")
+```
 
 ## Punctuation and Delimiters
 
