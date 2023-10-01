@@ -1124,6 +1124,27 @@ result = a >> 2   # result is 4 (Binary: 0010)
 4. Data Serialization/Deserialization: Bitwise shift operations can be used in data serialization and deserialization to extract or pack binary data into specific fields.
 
 5. Efficient Memory Allocation: In some memory allocation strategies, bitwise shifts are used to allocate memory blocks or manage memory efficiently.
+   
+<h1><p align="center";></<< and >>> - left shift and right shift</p></h1>
+The "</<<" and ">>>" symbols are not commonly used operators in mainstream programming languages. However, they do have specific uses in a few programming contexts, notably in some assembly languages and hardware description languages:
+1. Assembly Languages:
+        In some assembly languages, "</<<" and ">>>" may be used as bitwise shift operators, similar to "<<" and ">>" respectively.
+        "</<<" typically represents a left bitwise shift operator, which shifts the bits of a binary number to the left by a specified number of positions, filling the vacated positions with zeroes.
+        ">>>" typically represents a logical right shift operator, which shifts the bits to the right, filling the vacated positions with zeroes.
+    For example, in x86 assembly, the "SHL" (Shift Left) and "SHR" (Shift Right) instructions are used for these operations, but they do not use "<<<" and ">>>".
+2. Hardware Description Languages (HDLs):
+        In hardware description languages like VHDL and Verilog, "<<<" and ">>>" may be used as shift operators for modeling digital circuits and logic gates.
+        Similar to assembly languages, "<<<" represents a left shift, and ">>>" represents a logical right shift in these contexts.
+Here's an example of how these operators might be used in VHDL:
+            
+```
+signal data_in : std_logic_vector(7 downto 0);
+signal shifted_left : std_logic_vector(7 downto 0);
+signal shifted_right : std_logic_vector(7 downto 0);
+
+shifted_left <= data_in <<< 2;  -- Left shift data_in by 2 bits
+shifted_right <= data_in >>> 3; -- Logical right shift data_in by 3 bits
+```
 
 ## String literals
 
