@@ -3,12 +3,12 @@ Different text symbols used in object oriented programming.
 
 ## Contents
 - [Punctuation and Delimiters](#punctuation-and-delimiters)
-- [Assignement Operators](#assignement-operators)
 - [Arrow Function](#arrow-function)
 - [Arithmetic Operators](#arithmetic-operators)
 - [Comparsion Operators](#comparsion-operators)
 - [Logical Operators](#logical-operators)
 - [Iterating Variables](#iterating-variables)
+- [Assignement Operators](#assignement-operators)
 - [Bitwise Operators](#bitwise-operators)
 - [String Literals](#string-literals)
 - [Template Literals](#template-literals)
@@ -596,6 +596,8 @@ The "%%" symbol does not have a standard or widely recognized usage in mainstrea
 3. Mathematical or Computational Usage (Custom Usage):
         In some mathematical or computational contexts, "%%" might be used as a placeholder or delimiter for specific operations or calculations, but this would depend on the specific problem domain or application.
 4. In many programming languages, especially those used for scripting and data analysis, the "%%" symbol (often pronounced as "modulo" or "mod") is used to determine whether a given number (usually an iteration count) is evenly divisible by another number. This is commonly used in loops to perform certain actions every nth iteration, such as displaying a progress indicator, updating a counter, or executing specific code.
+
+   Here's how it works in pseudocode or some programming languages:
 ```
 for i in range(1, N + 1):
     if i %% M == 0:
@@ -611,7 +613,62 @@ For example, if you want to print a progress update every 10th iteration in a lo
 
 The "%%" operator is often used in this context because it provides a straightforward way to determine whether an iteration is a multiple of a specific number, making it easy to perform actions at regular intervals during the loop execution.
 
-Here's how it works in pseudocode or some programming languages:
+
+## Iterating variables
+
+<h1><p align="center";>i and j - iterating variables</p></h1>
+
+In programming, the letter "i" (and sometimes "j") is commonly used as a variable name in loops, especially for iterating over sequences like arrays, lists, or ranges. This practice has its roots in mathematics and programming conventions.
+    Iterating Variable:
+        The variable "i" is often used as a shorthand for "index" or "iteration" in loops. It's used in for, while, and similar loop constructs to keep track of the current position or iteration count.
+        Example, in Python:
+```
+for i in range(5):
+    print(i)
+```
+
+In this loop, "i" takes on values from 0 to 4 in each iteration.
+Nested Loops:
+    When you have nested loops (loops within loops), "i" is often used for the outer loop, and "j" for the inner loop, and so on. This convention helps in keeping track of multiple levels of iteration.
+    For example, in C++:
+```
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 2; j++) {
+        cout << "i: " << i << ", j: " << j << endl;
+    }
+}
+```
+ Here, "i" is used for the outer loop, and "j" is used for the inner loop.
+Mathematical Influence:
+    The use of "i" and "j" in programming is influenced by mathematical conventions, where these letters are commonly used as indices or variables in mathematical equations.
+Readability:
+    Using "i" and "j" for loop variables is a widely accepted practice that can enhance code readability, as it makes it clear that these variables are used for iteration purposes.
+Other Usage:
+    In some programming contexts, "i" or "j" might be used for other purposes, such as as abbreviations for "input" or "integer." However, their most common usage is for loop variables.
+
+<h1><p align="center";>i++ and ++i - Post-increment and Pre-increment</p></h1>
+
+i++ and ++i are both increment operators used in various programming languages, such as C++, Java, and C#. They are used to increase the value of a variable by 1, but they have different behaviors in terms of when the increment takes place:
+    i++ (Post-increment):
+        i++ is a post-increment operator, which means it increments the value of i but returns the original value of i before the increment.
+        After the value is returned, i is then incremented by 1.
+        It is often used when you want to use the current value of i in an expression before incrementing it.
+    Example in C++:
+```
+int i = 5;
+int result = i++; // result will be 5, and i will become 6
+```
+
+++i (Pre-increment):
+    ++i is a pre-increment operator, which means it increments the value of i and returns the updated value.
+    It increments i by 1 first and then returns the incremented value.
+    It is used when you want to use the updated value of i in an expression.
+Example in C++:
+```
+int i = 5;
+int result = ++i; // result will be 6, and i will become 6
+```
+
 
 ## Assignement operators
 
@@ -722,39 +779,6 @@ y = 3
 y **= 2  # Equivalent to y = y ** 2
 # Now, y is 9 (3 raised to the power of 2)
 ```
-
-## Iterating variables
-
-<h1><p align="center";>i and j - iterating variables</p></h1>
-
-In programming, the letter "i" (and sometimes "j") is commonly used as a variable name in loops, especially for iterating over sequences like arrays, lists, or ranges. This practice has its roots in mathematics and programming conventions.
-    Iterating Variable:
-        The variable "i" is often used as a shorthand for "index" or "iteration" in loops. It's used in for, while, and similar loop constructs to keep track of the current position or iteration count.
-        Example, in Python:
-```
-for i in range(5):
-    print(i)
-```
-
-In this loop, "i" takes on values from 0 to 4 in each iteration.
-Nested Loops:
-    When you have nested loops (loops within loops), "i" is often used for the outer loop, and "j" for the inner loop, and so on. This convention helps in keeping track of multiple levels of iteration.
-    For example, in C++:
-```
-for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 2; j++) {
-        cout << "i: " << i << ", j: " << j << endl;
-    }
-}
-```
- Here, "i" is used for the outer loop, and "j" is used for the inner loop.
-Mathematical Influence:
-    The use of "i" and "j" in programming is influenced by mathematical conventions, where these letters are commonly used as indices or variables in mathematical equations.
-Readability:
-    Using "i" and "j" for loop variables is a widely accepted practice that can enhance code readability, as it makes it clear that these variables are used for iteration purposes.
-Other Usage:
-    In some programming contexts, "i" or "j" might be used for other purposes, such as as abbreviations for "input" or "integer." However, their most common usage is for loop variables.
-
 
 <h1><p align="center";>&= , |= , ^= - bitwise assignements</p></h1>
 Bitwise Assignment Operators (&=, |=, ^=): These operators perform bitwise AND, OR, and XOR operations, respectively, on the variable's current value and the value on the right-hand side, and then assign the result back to the variable.
