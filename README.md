@@ -1127,12 +1127,14 @@ result = a >> 2   # result is 4 (Binary: 0010)
    
 <h1><p align="center";><<< and >>> - left shift and right shift</p></h1>
 The "<<<" and ">>>" symbols are not commonly used operators in mainstream programming languages. However, they do have specific uses in a few programming contexts, notably in some assembly languages and hardware description languages:
+    
 1. Assembly Languages:
         In some assembly languages, "<<<" and ">>>" may be used as bitwise shift operators, similar to "<<" and ">>" respectively.
         "<<<" typically represents a left bitwise shift operator, which shifts the bits of a binary number to the left by a specified number of positions, filling the vacated positions with zeroes.
         ">>>" typically represents a logical right shift operator, which shifts the bits to the right, filling the vacated positions with zeroes.
     For example, in x86 assembly, the "SHL" (Shift Left) and "SHR" (Shift Right) instructions are used for these operations, but they do not use "<<<" and ">>>".
-2. Hardware Description Languages (HDLs):
+   
+3. Hardware Description Languages (HDLs):
         In hardware description languages like VHDL and Verilog, "<<<" and ">>>" may be used as shift operators for modeling digital circuits and logic gates.
         Similar to assembly languages, "<<<" represents a left shift, and ">>>" represents a logical right shift in these contexts.
 Here's an example of how these operators might be used in VHDL:
