@@ -666,6 +666,8 @@ y **= 2  # Equivalent to y = y ** 2
 # Now, y is 9 (3 raised to the power of 2)
 ```
 
+## Iterating variables
+
 <h1><p align="center";>i and j - iterating variables</p></h1>
 
 In programming, the letter "i" (and sometimes "j") is commonly used as a variable name in loops, especially for iterating over sequences like arrays, lists, or ranges. This practice has its roots in mathematics and programming conventions.
