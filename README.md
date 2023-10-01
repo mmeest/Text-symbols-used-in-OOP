@@ -1223,7 +1223,7 @@ $myVariable = "Hello, World!"
 
 ## Template literals
 
-<h1><p align="center";>$ - dollar sign</p></h1>
+<h1><p align="center";>$ and $$ - dollar and double dollar sign</p></h1>
 In programming, the dollar symbol ($) is used for various purposes, and its meaning and usage can vary depending on the programming language and context. Here are some common uses of the dollar symbol in programming:
     String Interpolation and Template Literals: In some programming languages and scripting languages, the dollar symbol ($) is used to indicate string interpolation or template literals. It allows you to embed expressions or variables directly within string literals.
         JavaScript (ES6 and later):
@@ -1252,6 +1252,35 @@ Interpolation in Template Engines: In certain template engines, like PHP, the do
 ```
 <h1>Welcome, <?php echo $user; ?>!</h1>
 ```
+
+The "$$" symbol does not have a widely recognized or standardized usage in mainstream programming languages. Its meaning and usage can vary greatly depending on the specific context and the programming language or tool in which it is used.
+1. Shell Scripting (Unix/Linux):
+        In Unix and Linux shell scripting, "$$" is often used to represent the process ID (PID) of the current running script or shell. For example, you might see it used in a script to create a unique temporary file or directory name.
+        Here's an example in a shell script:
+```
+# Get the PID of the current script
+my_pid=$$
+
+# Use it to create a unique temporary file
+temp_file="/tmp/my_temp_file_${my_pid}.txt"
+```
+2. Makefiles (GNU Make):
+    In GNU Make, a build automation tool, "" is used to escape a single dollar sign. Since "$" is a special character in Makefiles, "" is used to represent a literal "$" character.
+    For example, to output a single "$" character in a Makefile, you would use "$$".
+3. Regular Expressions (Some Text Processing Tools):
+    In some text processing tools and regular expression engines, "$$" might be used to represent the end of a line or the end of input.
+4. Custom or Non-Standard Usage:
+    In some programming or scripting contexts, developers might use "$$" for their own custom purposes, but this usage would not be widely recognized or standardized.
+5. The "$$" symbol is sometimes used in SQL, particularly in certain SQL database systems, as an alternative delimiter for specifying string literals. Its usage is not standard SQL and is typically found in specific database systems that support it.
+For example, in some database systems like PostgreSQL, you can use "$$" to delimit string literals, especially in cases where the standard single quotes might conflict with the content of the string. This can be particularly useful when dealing with SQL queries that contain a lot of single quotes within the string.
+Here's an example of using "$$" to delimit a string in PostgreSQL:
+```
+SELECT $$This is a string with 'single quotes'$$;
+```
+In this example, the text within the "$$" symbols is treated as a string literal, and any single quotes within it are not interpreted as string delimiters.
+
+It's important to note that the usage of "$$" as a string delimiter is not part of the SQL standard, and it may not be supported in all SQL database systems. It's specific to databases that have chosen to implement this feature for improved compatibility with certain use cases.
+
 
 <h1><p align="center";>` - accent grave</p></h1>
 Template Literals (JavaScript and Others): In JavaScript and similar languages, the accent grave is used to create template literals. Template literals allow for string interpolation, making it easy to embed expressions within string literals.
