@@ -559,7 +559,7 @@ Preprocessor Directives (C/C++): In C and C++ programming, the double forward sl
 #define MAX_VALUE 100 // This is a comment
 ```
 
-<h1><p align="center";>% and % - percent and double percend or modulo or mod</p></h1>
+<h1><p align="center";>% and %% - percent and double percend or modulo or mod</p></h1>
 In programming, the percent symbol (%) is primarily used as the modulo operator, which calculates the remainder of a division operation between two numeric values. 
 Modulo Operator (%):
     Modulo Operation: The percent symbol (%) is used to perform a modulo operation, which calculates the remainder when one number is divided by another. It returns the remainder as the result. For example:
