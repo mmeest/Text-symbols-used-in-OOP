@@ -996,7 +996,7 @@ let isFalsy = !value;  // isFalsy is false (implicit type coercion)
 
 ## Bitwise operators
 
-<h1><p align="center";>~ - tilde</p></h1>
+<h1><p align="center";>~ and ~~ - tilde and double tidle</p></h1>
 The tilde symbol (~) is used in programming languages for various purposes, primarily related to bitwise operations and sometimes as a mathematical operator for negation or complementing values. 
 Bitwise NOT Operator (~):
 In many programming languages, the tilde (~) is used as a bitwise NOT operator. It performs a bitwise negation operation, which means it flips the bits of a binary number, changing each 0 to 1 and each 1 to 0.
@@ -1016,6 +1016,16 @@ In some programming languages, particularly in mathematical contexts, the tilde 
 Special Use Cases (Some Languages):
 
 In certain programming languages, the tilde (~) may have specialized uses or meanings beyond its common bitwise NOT operation. For instance, in Perl, it can be used to represent filehandles, and in Ruby, it can be used in regular expressions for negative lookahead assertions.
+Double Bitwise NOT ( ~~ ): 
+When you use " ~~,"  it effectively applies the bitwise NOT operator twice, which cancels out the effect and returns the original value.
+    For example, if you apply " ~~ " to 5, you get 5 back:
+```
+var x = 5;
+var result = ~~x; // result is 5
+```
+This can be useful in some cases for converting floating-point numbers to integers by removing the decimal part, but it's not as common as other methods like Math.floor() or parseInt().
+
+The "~~" symbol is not a standard operator in all programming languages, and its usage might be more prevalent in languages that heavily rely on bitwise operations, such as JavaScript for certain tricks or optimizations. However, it's generally considered less readable and less idiomatic than using more explicit methods for performing the same operations in code.
 
 <h1><p align="center";>^ - caret</p></h1>
 The caret symbol (^) is used in programming languages for various purposes, including bitwise XOR (exclusive OR) operations, exponentiation, and sometimes as a symbol for logical XOR. 
