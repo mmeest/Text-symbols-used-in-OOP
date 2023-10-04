@@ -188,7 +188,41 @@ The slice notation allows you to extract a portion of the sequence.
 ```
 my_string = "Hello, World!"
 substring = my_string[0:5]  # Extracting the substring "Hello"
-```    
+```
+
+ In CSS, the colon (:) is used to define and apply pseudo-elements and pseudo-classes. Pseudo-elements allow you to style parts of an element, such as the first line of text or the first letter of a paragraph, while pseudo-classes allow you to apply styles to elements based on their state or position, such as when a link is hovered over.
+     Pseudo-classes:
+        :hover is used to apply styles to an element when the mouse pointer is over it.
+        :active is used to apply styles to an element when it is being clicked.
+        :nth-child() is used to select elements based on their position within a parent element.
+
+Example:
+```
+a:hover {
+    color: red;
+}
+
+li:nth-child(odd) {
+    background-color: lightgray;
+}
+```
+
+CSS Pseudo-elements:
+        ::before is used to insert content before the content of an element.
+        ::after is used to insert content after the content of an element.
+        ::first-line is used to style the first line of text within an element.
+        ::first-letter is used to style the first letter of text within an element.
+
+Example:
+```
+p::first-line {
+    font-weight: bold;
+}
+
+a::after {
+    content: " (link)";
+}
+```
 
 In programming, the "::" symbol has different meanings and usages in various programming languages. Its usage can vary significantly depending on the context and the language in which it is used. Here are a few common uses of "::" in programming:
 
