@@ -1074,8 +1074,36 @@ In the example above, <p> is the opening tag, and </p> is the closing tag. Toget
 
 HTML uses a markup language syntax, and angle brackets are a fundamental part of this syntax for creating and structuring web content. In HTML, tags serve to group and define elements, and their use is similar to how parentheses are used to group expressions in programming languages.
 
-So, in HTML, angle brackets < and > are indeed used as a form of "parentheses" for defining and structuring HTML elements.
+So, in HTML, angle brackets < and > are used as a form of "parentheses" for defining and structuring HTML elements.
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
 
+CSS uses the greater-than symbol (>) for the child combinator selector. This selector is used to target elements that are direct children of a specified parent element.
+For example, if you have the following HTML structure:
+```
+<div class="parent">
+    <p>Child paragraph 1</p>
+    <p>Child paragraph 2</p>
+</div>
+```
+You can use the child combinator selector to target the p elements that are direct children of the .parent element like this:
+```
+.parent > p {
+    /* CSS rules for direct child paragraphs of .parent */
+}
+```
 
 
 <h1><p align="center";><= and >= - less than or equal to AND greater than or equal to</p></h1>
