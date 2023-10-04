@@ -605,6 +605,22 @@ let greeting = "Hello, ";
 let name = "Alice";
 let message = greeting + name;  // message is "Hello, Alice"
 ```
+In CSS, the plus sign (+) is used as a selector to target elements that are immediately preceded by a specified element. This is called the adjacent sibling combinator.
+
+For example, if you have the following HTML:
+```
+<p>Paragraph 1</p>
+<div>Div 1</div>
+<p>Paragraph 2</p>
+```
+You can use the adjacent sibling combinator to select the <div> element that directly follows a <p> element like this:
+```
+p + div {
+    /* CSS rules for div immediately following a p */
+}
+```
+
+
 Double Plus Sign (++) - Increment Operator:
     The double plus sign (++) is used as an increment operator. It is used to increase the value of a variable by 1. The increment operation can be applied to numeric variables, including integers and floating-point numbers. For example:
         In C++:
