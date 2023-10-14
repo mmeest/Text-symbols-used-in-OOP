@@ -1155,6 +1155,23 @@ You can use the child combinator selector to target the p elements that are dire
 }
 ```
 
+<h1><p align="center";></> - closing tag</p></h1>
+</> does not have any meaningful use but it represents a closing tag in XML, HTML and XTHTML
+It can be used as a logo for HTML or web development.
+
+```
+<p>This is a paragraph.</p>
+```
+
+In computer science, </> is a symbol used to represent code or programming. It is often used in online forums, chat rooms, or messaging apps to indicate that the following text or code is a computer program. The </> symbol is meant to resemble HTML code tags, which are used to mark up text and indicate that it should be interpreted as HTML code.
+
+The </> symbol can be used in a variety of contexts, such as:
+* In programming forums or chat rooms, users might use </> to indicate that they are posting code or asking for help with a coding problem.
+* In social media or messaging apps, users might use </> to share code snippets or programming-related content with others.
+* In code editors or integrated development environments (IDEs), the </> symbol might be used to represent a button or menu option for inserting code snippets or formatting code.
+
+Overall, the </> symbol has become a popular shorthand for representing programming and coding in online contexts.
+
 
 <h1><p align="center";><= and >= - less than or equal to AND greater than or equal to</p></h1>
 The <= (less than or equal to) and >= (greater than or equal to) operators are comparison operators used in programming to check if a value is less than or equal to or greater than or equal to another value, respectively. These operators are commonly used in conditional statements, loop control, and comparisons involving numeric and non-numeric data types. Here's how they work:
