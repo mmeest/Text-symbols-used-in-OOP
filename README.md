@@ -1841,7 +1841,7 @@ Documentation Comments:
  * It includes information about classes, methods, and parameters.
  */
 ```
-<h1><p align="center";><!-- and --> - enclosing tag comments</p></h1>
+<h1><p align="center";>&lt;!-- and --&gt; - enclosing tag comments</p></h1>
 HTML (Hypertext Markup Language) comments are used to add explanatory or descriptive text within an HTML document. Comments in HTML are not displayed in the browser and do not affect the rendering of the web page. Instead, they serve as documentation, notes for developers, or reminders about the structure and purpose of the HTML code.
 
 HTML comments are enclosed within <!-- and --> tags and can be placed anywhere in the HTML document. Here's the basic syntax for an HTML comment:
