@@ -1629,7 +1629,7 @@ path = r'C:\Program Files'  # This is a raw string
 
 ## Separator
 
-<h1><p align="center";>_ - separator</p></h1>
+<h1><p align="center";>_ - separator or underscore</p></h1>
 In programming, the underscore symbol (_) is used for various purposes, and its specific meaning and usage can differ depending on the programming language. 
     Variable Naming Conventions:
         As a Placeholder: In many programming languages, the underscore is used as a placeholder or throwaway variable name when you need to ignore or discard a variable. It's often used in situations where a variable is required for syntactic reasons but its value is not needed.
