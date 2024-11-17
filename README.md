@@ -570,6 +570,10 @@ the dot operator is used to call those methods. For example:
 String greeting = "Hello, World!";
 int length = greeting.length();  // Calling the `length` method using the dot operator
 ```
+To point out structured hierarchy. For example Java packet names:
+```
+com.example.myapp
+```
 Object Property Assignment: In JavaScript, you can use the dot operator 
 to add or modify properties of objects. For example:
 ```
@@ -698,6 +702,10 @@ String Concatenation (in some languages): In some scripting languages like JavaS
     In JavaScript:
 ```
 let result = "Hello, " - "World!";  // result is NaN (Not-a-Number)
+```
+Kebab-case is a variable naming convention where each word is in lower case, and separated by dashes. It is also known as dash-case, list-case, or spinal-case. Used in HTML and CSS:
+```
+my-method, calculate-sum
 ```
 
 <h1><p align="center";>* and ** - asterisk and double asterisk</p></h1>
