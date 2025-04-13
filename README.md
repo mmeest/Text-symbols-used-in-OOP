@@ -1440,6 +1440,14 @@ int x = 5;   // Binary: 0101
 int result = x << 2;  // result is 20 (Binary: 10100)
 ```
 
+In Ruby programming language you can add text to the existing string replacing original with two << symbols.
+
+```
+str = "Hello"
+str << " World!"
+puts str # => Hello World!
+```
+
 >> (Right Shift Operator):
 
 The >> operator performs a right shift operation, which moves the bits of a binary number to the right by a specified number of positions. Each shift to the right effectively divides the number by 2 raised to the power of the shift amount. It's commonly used for fast division by powers of 2 or extracting individual bytes or bits from binary data.
