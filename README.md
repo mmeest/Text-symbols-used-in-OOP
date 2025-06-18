@@ -234,24 +234,35 @@ In programming, the "::" symbol has different meanings and usages in various pro
         In Java, "::" is used for method references, which are a way to refer to methods without invoking them.
         For instance, you can use ClassName::methodName to refer to a static method or objectName::methodName to refer to an instance method.
 
-3. Type Casting (C#):
+```
+list.forEach(System.out::println);
+```
+
+4. Type Casting (C#):
         In C#, the "::" symbol is used for type casting, especially in cases involving the as operator, to cast an object to a specific type.
         For example: objectOfTypeB as TypeA would cast objectOfTypeB to TypeA.
 
-4. Nested Class Separator (C++ and C#):
+5. Nested Class Separator (C++ and C#):
         In both C++ and C#, "::" is used as a separator to access nested classes within a class.
         For example, if you have a nested class InnerClass within an outer class OuterClass, you can access it using OuterClass::InnerClass in C++ or OuterClass.InnerClass in C#.
 
-5. Scope Operator (PHP):
+6. Scope Operator (PHP):
         In PHP, "::" is used as the scope operator to access static properties, methods, and constants of a class without needing to create an instance of the class.
         For example, ClassName::staticMethod() is used to call a static method.
 
-6. Method Resolution Operator (Python - Notation in Django):
+7. Method Resolution Operator (Python - Notation in Django):
         In Python, "::" is used in the context of Django, a Python web framework, to refer to the method resolution order of classes.
         For example, MyModel::some_method can be used in Django models to refer to the method some_method.
 
-7. Alternative Syntax (JavaScript):
+8. Alternative Syntax (JavaScript):
         In JavaScript, "::" is not a standard operator, but it may be used in some transpilers or preprocessors as an alternative syntax for certain purposes. For example, some JavaScript compilers use "::" to define static methods in classes.
+
+9. Namespace or Constant action in Ruby:
+
+```
+Math::PI       # => 3.1415926535
+EisBilling::Invoice  # => viitab klassile Invoice moodulis EisBilling
+```   
 
 
 <h1><p align="center";>; - Semicolon</p></h1>
