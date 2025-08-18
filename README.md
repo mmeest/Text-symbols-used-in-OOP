@@ -265,7 +265,7 @@ EisBilling::Invoice  # => viitab klassile Invoice moodulis EisBilling
 ```   
 
 
-<h1><p align="center";>; - Semicolon</p></h1>
+<h1><p align="center";>; and ;; - Semicolon and double semicolon</p></h1>
 Semicolon is a punctuation symbol commonly used in many programming languages. 
 Its primary purpose is to terminate statements or separate multiple statements 
 on a single line. Here's a breakdown of its usage in programming:
@@ -308,6 +308,31 @@ my_tuple = (1; 2; 3)
 In practice, Python developers usually use commas to define tuples:
 ```
 my_tuple = (1, 2, 3)
+```
+
+;; - double semicolon
+In Bash/Shell scripting it is used as ending for cause-sentence 
+
+```
+case "$fruit" in
+    apple)
+        echo "Apple";;
+    banana)
+        echo "Banana";;
+esac
+```
+
+OCaml/F#
+
+```
+let x = 5;;
+let y = x + 2;;
+```
+
+Theoretically it can be used in Ruby to put multiple commands on one line
+
+```
+puts "Hello";; puts "World"
 ```
 
 <h1><p align="center";>' - Single quote</p></h1>
