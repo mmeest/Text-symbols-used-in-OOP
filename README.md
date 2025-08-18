@@ -1231,6 +1231,24 @@ Data Structures: In data structures like trees, heaps, and priority queues, thes
 
 These operators are versatile and can be used with various data types, including numeric, string, and custom data types, depending on the programming language and context. They are essential tools for implementing logic that depends on the relationships between values.
 
+<h1><p align="center";>/<=> - combined comparsion operator or spaceship operator</p></h1>
+Used in Ruby, Perl, PHP 7+ and C++20
+It returns 0 if the first operand (item to be compared) equals the second, 1 if the first operand is greater than the second, and -1 if the first operand is less than the second.
+
+```
+print 5 <=> 10; # -1
+print 10 <=> 10; # 0
+print 15 <=> 10; # 1
+```
+
+In old Python (2.x) had similar method cmp()
+
+```
+cmp(5, 10)  # -1
+cmp(10, 10) # 0
+cmp(15, 10) # 1
+```
+
 ## Logical operators
 
 <h1><p align="center";>| and || - vertical bar and double vertical bar or pipe</p></h1>
