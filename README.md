@@ -1595,6 +1595,26 @@ result = a >> 2   # result is 4 (Binary: 0010)
 4. Data Serialization/Deserialization: Bitwise shift operations can be used in data serialization and deserialization to extract or pack binary data into specific fields.
 
 5. Efficient Memory Allocation: In some memory allocation strategies, bitwise shifts are used to allocate memory blocks or manage memory efficiently.
+
+
+<< is used in Ruby as concatenation operator and called as 'the Showel'
+For strings:
+
+```
+str = "Hello"
+str << " World"
+puts str
+# Output: "Hello World"
+```
+
+For arrays:
+
+```
+arr = [1, 2]
+arr << 3
+puts arr.inspect
+# Output: [1, 2, 3]
+```
    
 <h1><p align="center";><<< and >>> - left shift and right shift</p></h1>
 The "<<<" and ">>>" symbols are not commonly used operators in mainstream programming languages. However, they do have specific uses in a few programming contexts, notably in some assembly languages and hardware description languages:
