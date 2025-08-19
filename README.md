@@ -1669,7 +1669,7 @@ formatted_string = "My name is #{name} and I am #{age} years old."
 
 F-strings, template literals, and string interpolation are powerful features that simplify the process of creating formatted strings in a way that makes code more readable and concise. These features are particularly useful when you need to combine text with variable values or expressions within strings. The "f" in f-strings generally stands for "formatted" or "formatted string," indicating that they are designed for creating strings with specific formatting needs.
 
-<h1><p align="center";>@ - at symbol</p></h1>
+<h1><p align="center";>@ and @@ - at symbol and double at</p></h1>
 The "@" symbol (@) has various uses and meanings in programming languages, and its specific function can vary significantly depending on the language and context.
 String Literals (C# and Verbatim Strings): In C#, the "@" symbol can be used to define verbatim string literals, which treat backslashes as literal characters and allow multi-line strings.
     C# Example (Verbatim String):
@@ -1709,7 +1709,29 @@ def my_property(self):
 Variable Assignment (Some Scripting Languages): In some scripting languages, such as PowerShell, the "@" symbol may be used for variable assignment or manipulation.
     PowerShell Example:
 ```
-$myVariable = "Hello, World!"
+@myVariable = "Hello, World!"
+```
+
+@@ is used in Ruby as classvariable
+
+```
+class Dog
+  @@number_of_dogs = 0  # classvariable
+
+  def initialize(name)
+    @name = name        # instancevariable
+    @@number_of_dogs += 1
+  end
+
+  def self.total_dogs
+    @@number_of_dogs
+  end
+end
+
+Dog.new("Fido")
+Dog.new("Rex")
+
+puts Dog.total_dogs  # => 2
 ```
 
 ## Template literals
