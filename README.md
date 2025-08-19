@@ -1089,6 +1089,30 @@ Logical Assignment (&&=, ||=): These operators perform logical AND and logical O
 
 Note: These operators are less common and are not available in all programming languages.
 
+||= assign if nil/false known as or-equals in Ruby:
+
+```
+name = nil
+name ||= "Martin"
+puts name  # => "Martin"
+
+name ||= "John"
+puts name  # => "Martin" (value will not change because of truthy)
+```
+
+&&= assign if true known as and-equals in Ruby:
+
+```
+age = 25
+age &&= 30
+puts age  # => 30 (because age is truthy)
+
+age = nil
+age &&= 40
+puts age  # => nil (because age is nil, no change)
+```
+
+
 ## Comparsion operators
 
 <h1><p align="center";>== and != - equal and not equal</p></h1>
