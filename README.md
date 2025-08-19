@@ -1412,6 +1412,17 @@ let value = "Hello";
 let isFalsy = !value;  // isFalsy is false (implicit type coercion)
 ```
 
+Example of reversing true/false for boolean in Ruby
+
+```
+def toggle(flag)
+  !flag
+end
+
+puts toggle(true)   # => false
+puts toggle(false)  # => true
+```
+
 ## Bitwise operators
 
 <h1><p align="center";>~ and ~~ - tilde and double tidle</p></h1>
