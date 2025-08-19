@@ -1163,6 +1163,36 @@ let isStrictlyNotEqual = x !== y;  // isStrictlyNotEqual is true
 ```
 These strict comparison operators ensure that both the values and data types of the operands are considered in the comparison.
 
+<h1><p align="center";><> and >< - not equal operators</p></h1>
+
+SQL:
+
+```
+SELECT * FROM users
+WHERE age <> 30;
+```
+
+Pascal:
+
+```
+if x <> y then
+  writeln('Not equal');
+```
+
+VBA/Excel macro
+
+```
+If Cells(1,1).Value <> 10 Then
+    MsgBox "Value is not 10"
+End If
+```
+
+In some older SQL dialects >< is used for not equal comparsion:
+
+```
+SELECT * FROM table WHERE column >< 10;
+```
+
 <h1><p align="center";>< and > - less than and greater than</p></h1>
 In programming, the less-than (<) and greater-than (>) symbols are comparison operators used to perform relational comparisons between values or expressions. These operators are fundamental for making decisions, implementing conditional logic, and ordering elements in various programming contexts.
     < (Less-Than Operator):
