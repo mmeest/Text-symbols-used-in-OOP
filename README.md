@@ -620,7 +620,7 @@ person.age = 28;        // Adding the "age" property using the dot operator
 
 ## Arrow Function
 
-<h1><p align="center";>=> and -> - arrow function</p></h1>    
+<h1><p align="center";>=> and -> - arrow function and hash rocket</p></h1>    
 
 The symbol "=>" in programming is typically used in the context of anonymous functions or lambda expressions, especially in languages that support functional programming features. It is most commonly associated with languages like JavaScript, Python, Ruby, and C#, among others.
 JavaScript:
@@ -659,6 +659,16 @@ def add(a: int, b: int) -> int:
 ```
 
 Here, a: int and b: int use the "=>" symbol to indicate that a and b are of type int, and -> int specifies the return type.
+
+In Ruby => symbol is called hash rocket and it's used in hashes to join key value pairs 
+
+```
+numbers = {
+  :one => 1,
+  :two => "two",
+  :three => 3,
+}
+```
 
 
 ## Arithmetic Operators
