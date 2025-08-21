@@ -586,7 +586,7 @@ int add(int a, int b) {
 }
 ```
 
-<h1><p align="center";>. - Dot</p></h1>
+<h1><p align="center";>. and .. and ... - dot, double dot and triple dot</p></h1>
 In programming, the dot (.) is a commonly used punctuation symbol that serves various purposes, 
 depending on the context and programming language. Here are some of the primary uses of the dot in programming:
 Member Access Operator: The dot is frequently used as the member access operator 
@@ -617,6 +617,19 @@ const person = {};
 person.name = "David";  // Adding the "name" property using the dot operator
 person.age = 28;        // Adding the "age" property using the dot operator
 ```
+
+In Ruby two dots are used for inclusive range:
+
+```
+(1..5).to_a   # => [1, 2, 3, 4, 5]
+```
+
+Three dots in Ruby are used for exclusive range:
+
+```
+(1...5).to_a  # => [1, 2, 3, 4]
+```
+
 
 ## Arrow Function
 
