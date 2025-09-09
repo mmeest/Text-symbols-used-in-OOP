@@ -1458,7 +1458,7 @@ int y = 3;
 int bitwiseResult = x & y;   // bitwiseResult is 1 (bitwise AND)
 ```
 
-<h1><p align="center";>! - exclamation mark</p></h1>
+<h1><p align="center";>! and !! - exclamation mark and double exclamation mark</p></h1>
 In programming, the exclamation mark (!) is commonly used as a symbol with various meanings and usages depending on the context and programming language. Here are some of the common uses of the exclamation mark in programming:
     Logical NOT Operator (!): The most common usage of ! is as the logical NOT operator. It negates a Boolean value, meaning it changes true to false and false to true. It's used to perform logical negation.
         In JavaScript:
@@ -1499,6 +1499,33 @@ end
 puts toggle(true)   # => false
 puts toggle(false)  # => true
 ```
+
+In Ruby double exclamation mark turns variable into boolean
+
+```
+!!nil        # => false
+!!false      # => false
+!!0          # => true   
+!!""         # => true   
+!!"hello"    # => true
+!![]         # => true   
+```
+
+
+```
+value = "hello"
+
+if value
+  puts "truthy"     # => works
+end
+
+if !!value
+  puts "also truthy" # => works, but now is the value converted into boolean
+end
+```
+
+This kind of conversion(!!) into boolean works also in JavaScript and PHP
+
 
 ## Bitwise operators
 
