@@ -1900,7 +1900,7 @@ Internationalization and Translation:
 
 ## Escape characters
 
-<h1><p align="center";>\ - backslash</p></h1>
+<h1><p align="center";>\ and \\ - backslash and double backslash</p></h1>
 The backslash (\) symbol is used in programming languages for various purposes, and its meaning and usage can vary significantly depending on the language and context. Escape Sequences in Strings:
    Escape Characters: In many programming languages, the backslash is used as an escape character. It is followed by another character to represent special characters, control characters, or Unicode characters within string literals. Common escape sequences include \n for a newline, \t for a tab, and \" to escape double quotes within a string.
    Example in C++:
@@ -1973,7 +1973,7 @@ text = "This is a backslash: \\"
 
 ## Ternary conditional
 
-<h1><p align="center";>? - question mark</p></h1>
+<h1><p align="center";>? and ?? - question mark and double question mark</p></h1>
 In programming, the question mark (?) symbol is used for various purposes, and its meaning and usage can vary depending on the programming language and context. Here are some common uses of the question mark symbol in programming:
     Ternary Conditional Operator: In many programming languages, the question mark (?) is used as part of the ternary conditional operator, also known as the conditional expression. It allows you to create conditional expressions with a compact syntax.
         C/C++/C#:
@@ -2013,10 +2013,18 @@ Generic Type Parameters (C#): In C#, the question mark (?) can be used to define
 ```
 List<int?> numbers = new List<int?>();
 ```
+
+Nullish coalescing operator (??) in JavaScript adds default value to variable:
+```
+let name = null;
+let result = name ?? "Anonymous";
+console.log(result); // Anonymous
+```
+?? are similary used for example in C# and PHP
     
 ## Comments
 
-<h1><p align="center";># - hash</p></h1>
+<h1><p align="center";># and ## - hash and dobule hash</p></h1>
 In programming, the # symbol is commonly used for comments and preprocessor directives in various programming languages. The specific usage of # can vary depending on the language, so I'll explain its primary uses:
     Comments: In most programming languages, # is used to indicate the beginning of a comment. Comments are not executed as part of the program but are added for human-readable explanations or annotations within the code. Comments are ignored by the compiler or interpreter.
         Python:
@@ -2046,6 +2054,24 @@ Numeric Keypad (Assembly Languages): In some assembly languages, # is used to re
 ```
 LDR R0, =#1 ; Load register R0 with the value 1
 ```
+Double hash(##) is not widely used.
+In C/C++ ## macro or token pasting is used as follows:
+```
+#include <stdio.h>
+
+#define MAKE_VAR(name, num) name##num
+
+int main() {
+    int MAKE_VAR(var, 1) = 10;  // becomes int var1 = 10;
+    int MAKE_VAR(var, 2) = 20;  // becomes int var2 = 20;
+
+    printf("var1 = %d\n", var1);
+    printf("var2 = %d\n", var2);
+
+    return 0;
+}
+```
+
 
 <h1><p align="center";>/* ... */ and /** ... */ - delimiters</p></h1>
 Multi-Line Comments:
