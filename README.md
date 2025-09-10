@@ -20,7 +20,8 @@ Different text symbols used in object oriented programming.
 
 ## Example Code
 Example of Python code that uses different symbols used in programming:
-```
+```python
+
 # Define a list with some numbers
 numbers = [1, 2, 3, 4, 5]
 
