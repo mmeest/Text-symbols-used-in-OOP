@@ -669,7 +669,7 @@ array[..., 0]
 
 In JavaScript it is used as a spread operator:
 
-```
+```javascript
 let a = [1, 2, 3];
 let b = [...a, 4, 5];
 
@@ -678,13 +678,13 @@ console.log(b);
 
 and output will be:
 
-```
+```javascript
 [1, 2, 3, 4, 5]
 ```
 
 REST operator:
 
-```
+```javascript
 function sum(...numbers) {
     return numbers.reduce((a, b) => a + b, 0);
 }
@@ -694,7 +694,7 @@ console.log(sum(1, 2, 3, 4));
 
 and the output:
 
-```
+```javascript
 10
 ```
 
