@@ -587,7 +587,7 @@ int add(int a, int b) {
 }
 ```
 
-<h1><p align="center";>. and .. and ... - dot, double dot and triple dot</p></h1>
+<h1><p align="center";>. and .. and ... - dot, double dot and triple dot or ellipsis</p></h1>
 In programming, the dot (.) is a commonly used punctuation symbol that serves various purposes, 
 depending on the context and programming language. Here are some of the primary uses of the dot in programming:
 Member Access Operator: The dot is frequently used as the member access operator 
@@ -629,6 +629,73 @@ Three dots in Ruby are used for exclusive range:
 
 ```ruby
 (1...5).to_a  # => [1, 2, 3, 4]
+```
+
+In Python three dots or ellipsis it is a stand alone object:
+
+```python
+x = ...
+
+print(x)
+print(type(x))
+```
+
+and output will be:
+
+```python
+Ellipsis
+<class 'ellipsis'>
+```
+
+In Python it can also be used as temporary code replacement:
+
+```python
+def calculate():
+    ...
+```
+
+it's actually same as:
+
+```python
+def calculate():
+    pass
+```
+
+In Python it can also be used in multilevel arrays:
+
+```python
+array[..., 0]
+```
+
+In JavaScript it is used as a spread operator:
+
+```
+let a = [1, 2, 3];
+let b = [...a, 4, 5];
+
+console.log(b);
+```
+
+and output will be:
+
+```
+[1, 2, 3, 4, 5]
+```
+
+REST operator:
+
+```
+function sum(...numbers) {
+    return numbers.reduce((a, b) => a + b, 0);
+}
+
+console.log(sum(1, 2, 3, 4));
+```
+
+and the output:
+
+```
+10
 ```
 
 
